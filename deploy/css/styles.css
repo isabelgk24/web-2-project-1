@@ -427,16 +427,30 @@ textarea {
 /* =============
     Header
 ============= */
-header {
+#header {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". header .";
 }
-header > div {
+#header > div {
   grid-area: header;
-  border: 1 px solid red;
 }
 
 /* =============
     Footer
+============= */
+/* =============
+    content1
+============= */
+#content1 {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". content1 .";
+}
+#content1 > div {
+  grid-area: content1;
+}
+
+/* =============
+    content2
 ============= */
