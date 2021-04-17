@@ -379,6 +379,10 @@ ul li {
   align-items: center;
 }
 
+img {
+  width: 100%;
+}
+
 /* =============
     Typography
 ============= */
@@ -439,6 +443,15 @@ textarea {
 /* =============
     Footer
 ============= */
+#footer {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". footer .";
+}
+#footer > div {
+  grid-area: footer;
+}
+
 /* =============
     content1
 ============= */
@@ -480,11 +493,23 @@ textarea {
 ============= */
 #hero {
   display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". hero .";
+  grid-template-columns: auto;
+  grid-template-areas: "hero";
 }
 #hero > div {
   grid-area: hero;
+}
+
+/* =============
+    herotext
+============= */
+#herotext {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". herotext .";
+}
+#herotext > div {
+  grid-area: herotext;
 }
 
 /* =============
