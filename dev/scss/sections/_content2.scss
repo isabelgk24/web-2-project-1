@@ -4,4 +4,11 @@
 
 #content2{
 
+    display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". content2 .";
+
+        >div{
+            grid-area: content2;
+        }
 }

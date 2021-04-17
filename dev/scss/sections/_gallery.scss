@@ -1,0 +1,14 @@
+/* =============
+    gallery
+============= */
+
+#gallery{
+
+    display: grid;
+        grid-template-columns: auto;
+        grid-template-areas: "gallery";
+
+        >div{
+            grid-area: gallery;
+        }
+}
