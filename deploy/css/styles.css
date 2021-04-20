@@ -452,12 +452,12 @@ textarea {
 /* =============
     content1
 ============= */
-#content1 {
+#content1 ul li {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". content1 .";
 }
-#content1 > div {
+#content1 ul li > div {
   grid-area: content1;
 }
 
