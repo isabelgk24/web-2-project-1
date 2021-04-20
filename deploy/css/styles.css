@@ -479,16 +479,14 @@ textarea {
 /* =============
     gallery
 ============= */
-#gallery {
+#gallery ul {
   display: grid;
-  grid-template-columns: auto;
-  grid-template-areas: "gallery";
 }
-#gallery > div {
-  grid-area: gallery;
-}
-#gallery img {
+#gallery ul li img {
   width: 100%;
+}
+#gallery ul #g3 {
+  display: none;
 }
 
 /* =============

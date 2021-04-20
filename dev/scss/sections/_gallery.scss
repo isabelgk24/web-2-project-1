@@ -3,16 +3,17 @@
 ============= */
 
 #gallery{
-
-    display: grid;
-        grid-template-columns: auto;
-        grid-template-areas: "gallery";
-
-        >div{
-            grid-area: gallery;
+    
+    ul{
+        display: grid;
+        li{
+            img{
+                width: 100%;
+            }
+            
         }
-
-        img{
-            width: 100%;
+        #g3{
+            display:none
         }
+    }
 }
