@@ -507,18 +507,6 @@ textarea {
 }
 
 /* =============
-    herotext
-============= */
-#herotext {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". herotext .";
-}
-#herotext > div {
-  grid-area: herotext;
-}
-
-/* =============
     search
 ============= */
 #search {
