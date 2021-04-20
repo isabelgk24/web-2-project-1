@@ -433,6 +433,7 @@ textarea {
   grid-template-areas: ". header .";
 }
 #header > div {
+  border: 1 px solid red;
   grid-area: header;
 }
 
@@ -498,11 +499,11 @@ textarea {
   grid-template-columns: auto;
   grid-template-areas: "hero";
 }
-#hero > div {
-  grid-area: hero;
-}
 #hero img {
   width: 100%;
+}
+#hero > div {
+  grid-area: hero;
 }
 
 /* =============

@@ -8,8 +8,8 @@
     grid-template-areas: ". header .";
 
     >div{
+        border: 1 px solid red;
         grid-area: header;
-        //border: 1 px solid red;
     }
 }
 
