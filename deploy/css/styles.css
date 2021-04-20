@@ -494,15 +494,15 @@ textarea {
 /* =============
     hero
 ============= */
-#hero {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-areas: "hero";
-}
 #hero img {
   width: 100%;
 }
-#hero > div {
+#hero ul li {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". hero .";
+}
+#hero ul li a {
   grid-area: hero;
 }
 
