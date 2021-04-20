@@ -379,10 +379,6 @@ ul li {
   align-items: center;
 }
 
-img {
-  width: 100%;
-}
-
 /* =============
     Typography
 ============= */
@@ -475,6 +471,9 @@ textarea {
 #content2 > div {
   grid-area: content2;
 }
+#content2 img {
+  width: 100%;
+}
 
 /* =============
     gallery
@@ -487,6 +486,9 @@ textarea {
 #gallery > div {
   grid-area: gallery;
 }
+#gallery img {
+  width: 100%;
+}
 
 /* =============
     hero
@@ -498,6 +500,9 @@ textarea {
 }
 #hero > div {
   grid-area: hero;
+}
+#hero img {
+  width: 100%;
 }
 
 /* =============
