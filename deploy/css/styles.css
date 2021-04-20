@@ -464,16 +464,16 @@ textarea {
 /* =============
     content2
 ============= */
-#content2 {
+#content2 ul li img {
+  width: 100%;
+}
+#content2 ul li section {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". content2 .";
 }
-#content2 > div {
+#content2 ul li div {
   grid-area: content2;
-}
-#content2 img {
-  width: 100%;
 }
 
 /* =============

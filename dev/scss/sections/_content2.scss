@@ -3,16 +3,20 @@
 ============= */
 
 #content2{
-
-    display: grid;
-        grid-template-columns: 16px auto 16px;
-        grid-template-areas: ". content2 .";
-
-        >div{
+    ul{
+        li{
+            img{
+                width: 100%;
+            }
+            section{
+                display: grid;
+                grid-template-columns: 16px auto 16px;
+                grid-template-areas: ". content2 .";
+            }
+        div{
             grid-area: content2;
         }
-
-        img{
-            width: 100%;
-        }
+    }
+    }
 }
+
