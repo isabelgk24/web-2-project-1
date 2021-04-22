@@ -10,7 +10,16 @@
             img{
                 width: 100%;
             }
-            
+        }
+        @include md{
+            grid-template-columns: 50% auto;
+            grid-template-areas: "g1 g2";
+        }
+        #g1{
+            grid-area: g1;
+        }
+        #g2{
+            grid-area: g2;
         }
         #g3{
             display:none

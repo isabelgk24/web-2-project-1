@@ -456,11 +456,6 @@ textarea {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". content1 .";
 }
-@media (min-width: 768px) {
-  #content1 ul li {
-    grid-template-columns: 36px auto 36px;
-  }
-}
 #content1 ul li > div {
   grid-area: content1;
 }
@@ -488,6 +483,18 @@ textarea {
 }
 #gallery ul li img {
   width: 100%;
+}
+@media (min-width: 768px) {
+  #gallery ul {
+    grid-template-columns: 50% auto;
+    grid-template-areas: "g1 g2";
+  }
+}
+#gallery ul #g1 {
+  grid-area: g1;
+}
+#gallery ul #g2 {
+  grid-area: g2;
 }
 #gallery ul #g3 {
   display: none;

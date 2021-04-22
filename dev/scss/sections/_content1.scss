@@ -10,10 +10,6 @@
             grid-template-columns: 16px auto 16px;
             grid-template-areas: ". content1 .";
 
-            @include md{
-                grid-template-columns: 36px auto 36px;
-            }
-
             >div{
                 grid-area: content1;
                 //border: 1px solid red;
