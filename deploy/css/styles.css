@@ -433,7 +433,6 @@ textarea {
   grid-template-areas: ". header .";
 }
 #header > div {
-  border: 1 px solid red;
   grid-area: header;
 }
 
@@ -456,6 +455,11 @@ textarea {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". content1 .";
+}
+@media (min-width: 768px) {
+  #content1 ul li {
+    grid-template-columns: 36px auto 36px;
+  }
 }
 #content1 ul li > div {
   grid-area: content1;
