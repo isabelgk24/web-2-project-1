@@ -431,6 +431,7 @@ textarea {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". header .";
+  background-color: #37644d;
 }
 #header > div {
   border: 1 px solid red;
