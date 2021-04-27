@@ -434,7 +434,6 @@ textarea {
   background-color: #37644d;
 }
 #header > div {
-  border: 1 px solid red;
   grid-area: header;
 }
 
@@ -609,6 +608,11 @@ textarea {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". search .";
+}
+@media (min-width: 1200px) {
+  #search {
+    grid-template-columns: auto 1000px auto;
+  }
 }
 #search > div {
   grid-area: search;
