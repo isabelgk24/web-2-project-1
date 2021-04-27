@@ -448,6 +448,27 @@ textarea {
 #footer > div {
   grid-area: footer;
 }
+@media (min-width: 768px) {
+  #footer > div {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "locations newsletter" "locations followus";
+  }
+}
+@media (min-width: 992px) {
+  #footer > div {
+    display: grid;
+    grid-template-columns: 33% auto 33%;
+    grid-template-areas: "locations newsletter followus";
+  }
+}
+@media (min-width: 1200px) {
+  #footer > div {
+    display: grid;
+    grid-template-columns: auto 400px 400px 400px auto;
+    grid-template-areas: ". locations newsletter followus .";
+  }
+}
 
 /* =============
     content1

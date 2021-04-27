@@ -6,8 +6,23 @@
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer .";
-
     >div{
         grid-area: footer;
+        @include md{
+            display: grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas: "locations newsletter"
+            "locations followus";
+            }
+            @include lg{
+                display: grid;
+                grid-template-columns: 33% auto 33%;
+                grid-template-areas: "locations newsletter followus";
+                }
+            @include xl{
+                display: grid;
+                grid-template-columns: auto 400px 400px 400px auto;
+                grid-template-areas: ". locations newsletter followus .";
+                }
     }
 }
