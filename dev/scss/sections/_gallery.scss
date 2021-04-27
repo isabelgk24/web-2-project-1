@@ -4,39 +4,37 @@
 
 #gallery{
         ul{
+            display: grid;
+
             @include md{
-                display: grid;
                 grid-template-columns: auto 50%;
-                grid-template-areas: "g1 g2";
             }
             @include lg{
-                display: grid;
                 grid-template-columns: auto 40%;
-                grid-template-areas: "g1 g2";
             }
             @include xl{
-                display: grid;
-                grid-template-columns: auto 40%;
+                grid-template-columns: auto 35%;
                 grid-template-areas: 
                 "g1 g2"
                 "g1 g3";
             }
-            display: grid;
+            
             li{
                 img{
                     width: 100%;
                 }
             }
+
             #g1{
-                display: grid;
+                grid-area: g1;
             }
             #g2{
-                display: grid;
+                grid-area: g2;
             }
             #g3{
                 display: none;
                 @include xl{
-                    display: grid;
+                    display: list-item;
                 }
             }
         }

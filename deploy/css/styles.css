@@ -549,22 +549,17 @@ textarea {
 }
 @media (min-width: 768px) {
   #gallery ul {
-    display: grid;
     grid-template-columns: auto 50%;
-    grid-template-areas: "g1 g2";
   }
 }
 @media (min-width: 992px) {
   #gallery ul {
-    display: grid;
     grid-template-columns: auto 40%;
-    grid-template-areas: "g1 g2";
   }
 }
 @media (min-width: 1200px) {
   #gallery ul {
-    display: grid;
-    grid-template-columns: auto 40%;
+    grid-template-columns: auto 35%;
     grid-template-areas: "g1 g2" "g1 g3";
   }
 }
@@ -572,17 +567,17 @@ textarea {
   width: 100%;
 }
 #gallery ul #g1 {
-  display: grid;
+  grid-area: g1;
 }
 #gallery ul #g2 {
-  display: grid;
+  grid-area: g2;
 }
 #gallery ul #g3 {
   display: none;
 }
 @media (min-width: 1200px) {
   #gallery ul #g3 {
-    display: grid;
+    display: list-item;
   }
 }
 
