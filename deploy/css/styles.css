@@ -478,6 +478,11 @@ textarea {
     grid-template-areas: "1 2 3" "4 5";
   }
 }
+@media (min-width: 1200px) {
+  #content2 ul {
+    grid-template-columns: auto 1200px auto;
+  }
+}
 #content2 ul li img {
   width: 100%;
 }
@@ -496,18 +501,43 @@ textarea {
 #gallery ul {
   display: grid;
 }
-#gallery ul li img {
-  width: 100%;
-}
 @media (min-width: 768px) {
-  #gallery ul li {
+  #gallery ul {
     display: grid;
     grid-template-columns: auto 50%;
     grid-template-areas: "g1 g2";
   }
 }
+@media (min-width: 992px) {
+  #gallery ul {
+    display: grid;
+    grid-template-columns: auto 40%;
+    grid-template-areas: "g1 g2";
+  }
+}
+@media (min-width: 1200px) {
+  #gallery ul {
+    display: grid;
+    grid-template-columns: auto 40%;
+    grid-template-areas: "g1 g2" "g1 g3";
+  }
+}
+#gallery ul li img {
+  width: 100%;
+}
+#gallery ul #g1 {
+  display: grid;
+}
+#gallery ul #g2 {
+  display: grid;
+}
 #gallery ul #g3 {
   display: none;
+}
+@media (min-width: 1200px) {
+  #gallery ul #g3 {
+    display: grid;
+  }
 }
 
 /* =============
@@ -517,7 +547,7 @@ textarea {
   width: 100%;
 }
 @media (min-width: 768px) {
-  #hero ul #subhero {
+  #hero #subhero {
     display: grid;
     grid-template-columns: 10% subhero 10%;
     grid-template-areas: ". auto .";

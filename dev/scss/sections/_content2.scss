@@ -18,6 +18,9 @@
             grid-template-areas: "1 2 3"
             "4 5";
         }
+        @include xl{
+            grid-template-columns: auto 1200px auto;
+        }
 
         li{
             img{

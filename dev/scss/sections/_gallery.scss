@@ -4,19 +4,40 @@
 
 #gallery{
         ul{
+            @include md{
+                display: grid;
+                grid-template-columns: auto 50%;
+                grid-template-areas: "g1 g2";
+            }
+            @include lg{
+                display: grid;
+                grid-template-columns: auto 40%;
+                grid-template-areas: "g1 g2";
+            }
+            @include xl{
+                display: grid;
+                grid-template-columns: auto 40%;
+                grid-template-areas: 
+                "g1 g2"
+                "g1 g3";
+            }
             display: grid;
             li{
                 img{
                     width: 100%;
                 }
-                @include md{
-                    display: grid;
-                    grid-template-columns: auto 50%;
-                    grid-template-areas: "g1 g2";
-                }
+            }
+            #g1{
+                display: grid;
+            }
+            #g2{
+                display: grid;
             }
             #g3{
                 display: none;
+                @include xl{
+                    display: grid;
+                }
             }
         }
 }

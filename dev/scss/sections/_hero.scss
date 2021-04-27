@@ -6,16 +6,15 @@
     img{
         width: 100%;
     }
-    
-    ul{
-        #subhero{
-            @include md{
-                display: grid;
-                grid-template-columns: 10% subhero 10%;
-                grid-template-areas: ". auto .";
-            }
-
+    #subhero{
+        @include md{
+            display: grid;
+            grid-template-columns: 10% subhero 10%;
+            grid-template-areas: ". auto .";
         }
+
+    }
+    ul{
 
         li{
             display: grid;
