@@ -5,12 +5,15 @@
 #gallery{
         ul{
             display: grid;
+            grid-template-areas: "g1" "g2";
 
             @include md{
                 grid-template-columns: auto 50%;
+                grid-template-areas: "g1 g2";
             }
             @include lg{
                 grid-template-columns: auto 40%;
+                grid-template-areas: "g1 g2";
             }
             @include xl{
                 grid-template-columns: auto 35%;

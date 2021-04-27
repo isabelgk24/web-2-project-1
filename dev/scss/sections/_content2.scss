@@ -4,6 +4,13 @@
 
 #content2{
 
+    @include md{
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". content2 .";
+    }
+
+>div{
     ul{
         li{
             img{
@@ -20,23 +27,6 @@
 
             }
         }
-        @include md{
-            display: grid;
-            grid-template-columns: 50% auto;
-            grid-template-areas: "1 2"
-            "3 4"
-            "5";
-        }
-        @include lg{
-            display: grid;
-            grid-template-columns: 33% auto 33%;
-            grid-template-areas: "1 2 3"
-            "4 5";
-        }
-        @include xl{
-            grid-template-columns: auto 400px 400px 400px auto;
-            grid-template-areas: ". 1 2 3 ."
-            ". 4 5 . .";
         }
     }
-}
+} 

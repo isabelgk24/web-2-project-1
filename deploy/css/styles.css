@@ -509,36 +509,23 @@ textarea {
 /* =============
     content2
 ============= */
-#content2 ul li img {
+@media (min-width: 768px) {
+  #content2 {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". content2 .";
+  }
+}
+#content2 > div ul li img {
   width: 100%;
 }
-#content2 ul li section {
+#content2 > div ul li section {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". content2 .";
 }
-#content2 ul li section div {
+#content2 > div ul li section div {
   grid-area: content2;
-}
-@media (min-width: 768px) {
-  #content2 ul {
-    display: grid;
-    grid-template-columns: 50% auto;
-    grid-template-areas: "1 2" "3 4" "5";
-  }
-}
-@media (min-width: 992px) {
-  #content2 ul {
-    display: grid;
-    grid-template-columns: 33% auto 33%;
-    grid-template-areas: "1 2 3" "4 5";
-  }
-}
-@media (min-width: 1200px) {
-  #content2 ul {
-    grid-template-columns: auto 400px 400px 400px auto;
-    grid-template-areas: ". 1 2 3 ." ". 4 5 . .";
-  }
 }
 
 /* =============
@@ -546,15 +533,18 @@ textarea {
 ============= */
 #gallery ul {
   display: grid;
+  grid-template-areas: "g1" "g2";
 }
 @media (min-width: 768px) {
   #gallery ul {
     grid-template-columns: auto 50%;
+    grid-template-areas: "g1 g2";
   }
 }
 @media (min-width: 992px) {
   #gallery ul {
     grid-template-columns: auto 40%;
+    grid-template-areas: "g1 g2";
   }
 }
 @media (min-width: 1200px) {
