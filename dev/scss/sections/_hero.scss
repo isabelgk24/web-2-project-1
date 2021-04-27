@@ -9,13 +9,10 @@
     ul{
         @include md{
             display: grid;
-            grid-template-columns: 50% auto;
-            grid-template-areas: "heroa herob";
+            grid-template-columns: 40% auto;
         }
-        @include xl{
-            display: grid;
-            grid-template-columns: auto 600px 600px auto;
-            grid-template-areas: ". heroa herob .";
+        @include lg{
+            grid-template-columns: 50% auto;
         }
 
         li{
@@ -23,13 +20,25 @@
             grid-template-columns: 16px auto 16px;
             grid-template-areas: ". hero .";
 
+            @include xl{
+                display: grid;
+                grid-template-columns: auto 480px 16px;
+            }
+
             a{
                 grid-area: hero;
                 //border: 1px solid red;
             }
         }
+        #heroa{
+            background-color: $green2;
+        }
+        #herob{
+            background-color: $green1;
+            @include xl{
+                display: grid;
+                grid-template-columns: 16px 480px auto;
+            }
+        }
     }
-    #subhero{
-        display: grid;
-    }
-}
+} 

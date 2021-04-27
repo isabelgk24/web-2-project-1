@@ -578,15 +578,12 @@ textarea {
 @media (min-width: 768px) {
   #hero ul {
     display: grid;
-    grid-template-columns: 50% auto;
-    grid-template-areas: "heroa herob";
+    grid-template-columns: 40% auto;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   #hero ul {
-    display: grid;
-    grid-template-columns: auto 600px 600px auto;
-    grid-template-areas: ". heroa herob .";
+    grid-template-columns: 50% auto;
   }
 }
 #hero ul li {
@@ -594,11 +591,26 @@ textarea {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero .";
 }
+@media (min-width: 1200px) {
+  #hero ul li {
+    display: grid;
+    grid-template-columns: auto 480px 16px;
+  }
+}
 #hero ul li a {
   grid-area: hero;
 }
-#hero #subhero {
-  display: grid;
+#hero ul #heroa {
+  background-color: #59866b;
+}
+#hero ul #herob {
+  background-color: #779d86;
+}
+@media (min-width: 1200px) {
+  #hero ul #herob {
+    display: grid;
+    grid-template-columns: 16px 480px auto;
+  }
 }
 
 /* =============
