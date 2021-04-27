@@ -452,6 +452,13 @@ textarea {
 /* =============
     content1
 ============= */
+@media (min-width: 768px) {
+  #content1 ul {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "plan need";
+  }
+}
 #content1 ul li {
   display: grid;
   grid-template-columns: 16px auto 16px;
@@ -464,6 +471,17 @@ textarea {
 /* =============
     content2
 ============= */
+#content2 ul li img {
+  width: 100%;
+}
+#content2 ul li section {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". content2 .";
+}
+#content2 ul li section div {
+  grid-area: content2;
+}
 @media (min-width: 768px) {
   #content2 ul {
     display: grid;
@@ -480,19 +498,9 @@ textarea {
 }
 @media (min-width: 1200px) {
   #content2 ul {
-    grid-template-columns: auto 1200px auto;
+    grid-template-columns: auto 400px 400px 400px auto;
+    grid-template-areas: ". 1 2 3 ." ". 4 5 . .";
   }
-}
-#content2 ul li img {
-  width: 100%;
-}
-#content2 ul li section {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". content2 .";
-}
-#content2 ul li section div {
-  grid-area: content2;
 }
 
 /* =============
@@ -547,10 +555,17 @@ textarea {
   width: 100%;
 }
 @media (min-width: 768px) {
-  #hero #subhero {
+  #hero ul {
     display: grid;
-    grid-template-columns: 10% subhero 10%;
-    grid-template-areas: ". auto .";
+    grid-template-columns: 50% auto;
+    grid-template-areas: "heroa herob";
+  }
+}
+@media (min-width: 1200px) {
+  #hero ul {
+    display: grid;
+    grid-template-columns: auto 600px 600px auto;
+    grid-template-areas: ". heroa herob .";
   }
 }
 #hero ul li {
@@ -560,7 +575,9 @@ textarea {
 }
 #hero ul li a {
   grid-area: hero;
-  border: 1px solid red;
+}
+#hero #subhero {
+  display: grid;
 }
 
 /* =============

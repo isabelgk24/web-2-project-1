@@ -5,6 +5,11 @@
 #content1{
     
     ul{
+        @include md{
+            display: grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas: "plan need";
+        }
         li{
             display: grid;
             grid-template-columns: 16px auto 16px;

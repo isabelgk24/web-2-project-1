@@ -6,15 +6,17 @@
     img{
         width: 100%;
     }
-    #subhero{
+    ul{
         @include md{
             display: grid;
-            grid-template-columns: 10% subhero 10%;
-            grid-template-areas: ". auto .";
+            grid-template-columns: 50% auto;
+            grid-template-areas: "heroa herob";
         }
-
-    }
-    ul{
+        @include xl{
+            display: grid;
+            grid-template-columns: auto 600px 600px auto;
+            grid-template-areas: ". heroa herob .";
+        }
 
         li{
             display: grid;
@@ -23,8 +25,11 @@
 
             a{
                 grid-area: hero;
-                border: 1px solid red;
+                //border: 1px solid red;
             }
         }
+    }
+    #subhero{
+        display: grid;
     }
 }
