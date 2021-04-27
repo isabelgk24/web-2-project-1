@@ -3,25 +3,36 @@
 ============= */
 
 #content2{
+
     ul{
         @include md{
             display: grid;
-            grid-template-columns: auto auto;
-        border: 1px red;
+            grid-template-columns: 50% auto;
+            grid-template-areas: "1 2"
+            "3 4"
+            "5";
         }
+        @include lg{
+            display: grid;
+            grid-template-columns: 33% auto 33%;
+            grid-template-areas: "1 2 3"
+            "4 5";
+        }
+
         li{
             img{
                 width: 100%;
             }
             section{
                 display: grid;
-                grid-template-columns: 50px auto 16px;
+                grid-template-columns: 16px auto 16px;
                 grid-template-areas: ". content2 .";
+
+                div{
+                    grid-area: content2;
+                }
+
             }
-        div{
-            grid-area: content2;
         }
     }
-    }
 }
-

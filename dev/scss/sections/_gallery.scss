@@ -3,7 +3,6 @@
 ============= */
 
 #gallery{
-    >div{
         ul{
             display: grid;
             li{
@@ -16,21 +15,8 @@
                     grid-template-areas: "g1 g2";
                 }
             }
-            #g1{
-                grid-area: g1;
-                @include md{
-                    display: list-item;
-                }
-            }
-            #g2{
-                grid-area: g2;
-                @include md{
-                    display: list-item;
-                }
-            }
             #g3{
-                display:none
+                display: none;
             }
         }
-    }
 }

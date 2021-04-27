@@ -464,6 +464,20 @@ textarea {
 /* =============
     content2
 ============= */
+@media (min-width: 768px) {
+  #content2 ul {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "1 2" "3 4" "5";
+  }
+}
+@media (min-width: 992px) {
+  #content2 ul {
+    display: grid;
+    grid-template-columns: 33% auto 33%;
+    grid-template-areas: "1 2 3" "4 5";
+  }
+}
 #content2 ul li img {
   width: 100%;
 }
@@ -472,7 +486,7 @@ textarea {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". content2 .";
 }
-#content2 ul li div {
+#content2 ul li section div {
   grid-area: content2;
 }
 
@@ -485,6 +499,13 @@ textarea {
 #gallery ul li img {
   width: 100%;
 }
+@media (min-width: 768px) {
+  #gallery ul li {
+    display: grid;
+    grid-template-columns: auto 50%;
+    grid-template-areas: "g1 g2";
+  }
+}
 #gallery ul #g3 {
   display: none;
 }
@@ -495,6 +516,13 @@ textarea {
 #hero img {
   width: 100%;
 }
+@media (min-width: 768px) {
+  #hero ul #subhero {
+    display: grid;
+    grid-template-columns: 10% subhero 10%;
+    grid-template-areas: ". auto .";
+  }
+}
 #hero ul li {
   display: grid;
   grid-template-columns: 16px auto 16px;
@@ -502,6 +530,7 @@ textarea {
 }
 #hero ul li a {
   grid-area: hero;
+  border: 1px solid red;
 }
 
 /* =============
