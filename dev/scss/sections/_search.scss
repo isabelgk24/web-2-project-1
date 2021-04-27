@@ -15,5 +15,11 @@
         >div{
             //border: 1px solid red;
             grid-area: search;
+
+            form{
+                button{
+                    background-color: $green1;
+                }
+            }
         }
 }

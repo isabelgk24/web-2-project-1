@@ -617,3 +617,6 @@ textarea {
 #search > div {
   grid-area: search;
 }
+#search > div form button {
+  background-color: #779d86;
+}
