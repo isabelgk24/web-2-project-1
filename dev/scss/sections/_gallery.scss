@@ -3,17 +3,34 @@
 ============= */
 
 #gallery{
-    
-    ul{
-        display: grid;
-        li{
-            img{
-                width: 100%;
+    >div{
+        ul{
+            display: grid;
+            li{
+                img{
+                    width: 100%;
+                }
+                @include md{
+                    display: grid;
+                    grid-template-columns: auto 50%;
+                    grid-template-areas: "g1 g2";
+                }
             }
-            
-        }
-        #g3{
-            display:none
+            #g1{
+                grid-area: g1;
+                @include md{
+                    display: list-item;
+                }
+            }
+            #g2{
+                grid-area: g2;
+                @include md{
+                    display: list-item;
+                }
+            }
+            #g3{
+                display:none
+            }
         }
     }
 }
