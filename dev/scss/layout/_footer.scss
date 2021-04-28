@@ -3,9 +3,16 @@
 ============= */
 
 #footer{
+    background-color: $green3;
+    color: $greengray;
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer .";
+
+@include xl{
+    grid-template-columns: auto 1000px auto;
+    }
+
     >div{
         grid-area: footer;
         @include md{
@@ -13,16 +20,29 @@
             grid-template-columns: 50% auto;
             grid-template-areas: "locations newsletter"
             "locations followus";
+            gap: 16px;
             }
             @include lg{
-                display: grid;
-                grid-template-columns: 33% auto 33%;
+                grid-template-columns: repeat (3, 1fr);
                 grid-template-areas: "locations newsletter followus";
                 }
-            @include xl{
-                display: grid;
-                grid-template-columns: auto 400px 400px 400px auto;
-                grid-template-areas: ". locations newsletter followus .";
-                }
+    section{
+        //border: 1px solid thistle;
+        }
+        #locations{
+            @include md{
+                grid-area: locations;
+            }
+        }
+        #newsletter{
+            @include md{
+                grid-area: newsletter;
+            }
+        }
+        #followus{
+            @include md{
+                grid-area: followus;
+            }
+        }
     }
-}
+} 

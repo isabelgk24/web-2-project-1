@@ -432,6 +432,7 @@ textarea {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". header .";
   background-color: #37644d;
+  color: white;
 }
 #header > div {
   grid-area: header;
@@ -441,9 +442,16 @@ textarea {
     Footer
 ============= */
 #footer {
+  background-color: #37644d;
+  color: #dadfd5;
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
+}
+@media (min-width: 1200px) {
+  #footer {
+    grid-template-columns: auto 1000px auto;
+  }
 }
 #footer > div {
   grid-area: footer;
@@ -453,20 +461,28 @@ textarea {
     display: grid;
     grid-template-columns: 50% auto;
     grid-template-areas: "locations newsletter" "locations followus";
+    gap: 16px;
   }
 }
 @media (min-width: 992px) {
   #footer > div {
-    display: grid;
-    grid-template-columns: 33% auto 33%;
+    grid-template-columns: repeat 3, 1fr;
     grid-template-areas: "locations newsletter followus";
   }
 }
-@media (min-width: 1200px) {
-  #footer > div {
-    display: grid;
-    grid-template-columns: auto 400px 400px 400px auto;
-    grid-template-areas: ". locations newsletter followus .";
+@media (min-width: 768px) {
+  #footer > div #locations {
+    grid-area: locations;
+  }
+}
+@media (min-width: 768px) {
+  #footer > div #newsletter {
+    grid-area: newsletter;
+  }
+}
+@media (min-width: 768px) {
+  #footer > div #followus {
+    grid-area: followus;
   }
 }
 
