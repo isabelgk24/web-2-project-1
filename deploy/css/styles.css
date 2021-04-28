@@ -516,6 +516,22 @@ textarea {
     grid-template-areas: ". content2 .";
   }
 }
+@media (min-width: 768px) {
+  #content2 > div {
+    grid-area: content2;
+  }
+}
+@media (min-width: 768px) {
+  #content2 > div ul {
+    display: grid;
+    grid-template-columns: repeat 4, 1fr;
+    grid-template-areas: "c1 c1 c2 c2" "c3 c3 c4 c4" ". c5 c5 .";
+    gap: 16px;
+  }
+}
+#content2 > div ul li {
+  background-color: #dadfd5;
+}
 #content2 > div ul li img {
   width: 100%;
 }
@@ -526,6 +542,31 @@ textarea {
 }
 #content2 > div ul li section div {
   grid-area: content2;
+}
+@media (min-width: 768px) {
+  #content2 > div ul #c1 {
+    grid-area: c1;
+  }
+}
+@media (min-width: 768px) {
+  #content2 > div ul #c2 {
+    grid-area: c2;
+  }
+}
+@media (min-width: 768px) {
+  #content2 > div ul #c3 {
+    grid-area: c3;
+  }
+}
+@media (min-width: 768px) {
+  #content2 > div ul #c4 {
+    grid-area: c4;
+  }
+}
+@media (min-width: 768px) {
+  #content2 > div ul #c5 {
+    grid-area: c5;
+  }
 }
 
 /* =============

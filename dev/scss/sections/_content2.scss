@@ -11,8 +11,20 @@
     }
 
 >div{
+    @include md{
+        grid-area: content2;
+    }
     ul{
+        @include md{
+            display: grid;
+            grid-template-columns: repeat (4, 1fr);
+            grid-template-areas: "c1 c1 c2 c2"
+            "c3 c3 c4 c4"
+            ". c5 c5 .";
+            gap: 16px;
+        }
         li{
+            background-color: $greengray;
             img{
                 width: 100%;
             }
@@ -25,6 +37,31 @@
                     grid-area: content2;
                 }
 
+            }
+        }
+        #c1{
+            @include md{
+                grid-area: c1;
+            }
+        }
+        #c2{
+            @include md{
+                grid-area: c2;
+            }
+        }
+        #c3{
+            @include md{
+                grid-area: c3;
+            }
+        }
+        #c4{
+            @include md{
+                grid-area: c4;
+            }
+        }
+        #c5{
+            @include md{
+                grid-area: c5;
             }
         }
         }
