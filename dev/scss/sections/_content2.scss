@@ -9,12 +9,16 @@
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". content2 .";
     }
+    @include xl{
+        grid-template-columns: auto 1200px auto;
+    }
 
 >div{
     @include md{
         grid-area: content2;
     }
     ul{
+
         @include md{
             display: grid;
             grid-template-columns: repeat (4, 1fr);
@@ -23,6 +27,12 @@
             ". c5 c5 .";
             gap: 16px;
         }
+        @include lg{
+            grid-template-columns: repeat (6, 1fr);
+            grid-template-areas: "c1 c1 c2 c2 c3 c3"
+            ". c4 c4 c5 c5 .";
+        }
+
         li{
             background-color: $greengray;
             img{

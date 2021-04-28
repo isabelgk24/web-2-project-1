@@ -3,20 +3,18 @@
 ============= */
 
 #gallery{
+
         ul{
             display: grid;
-            grid-template-areas: "g1" "g2";
 
             @include md{
-                grid-template-columns: auto 50%;
-                grid-template-areas: "g1 g2";
+                grid-template-columns: 50% auto;
             }
             @include lg{
-                grid-template-columns: auto 40%;
-                grid-template-areas: "g1 g2";
+                grid-template-columns: 60% auto;
             }
             @include xl{
-                grid-template-columns: auto 35%;
+                grid-template-columns: 65% auto;
                 grid-template-areas: 
                 "g1 g2"
                 "g1 g3";
@@ -29,15 +27,20 @@
             }
 
             #g1{
-                grid-area: g1;
+                @include xl{
+                    grid-area: g1;
+                }
             }
             #g2{
-                grid-area: g2;
+                @include xl{
+                    grid-area: g2;
+                }
             }
             #g3{
                 display: none;
                 @include xl{
                     display: list-item;
+                    grid-area: g3;
                 }
             }
         }

@@ -516,6 +516,11 @@ textarea {
     grid-template-areas: ". content2 .";
   }
 }
+@media (min-width: 1200px) {
+  #content2 {
+    grid-template-columns: auto 1200px auto;
+  }
+}
 @media (min-width: 768px) {
   #content2 > div {
     grid-area: content2;
@@ -527,6 +532,12 @@ textarea {
     grid-template-columns: repeat 4, 1fr;
     grid-template-areas: "c1 c1 c2 c2" "c3 c3 c4 c4" ". c5 c5 .";
     gap: 16px;
+  }
+}
+@media (min-width: 992px) {
+  #content2 > div ul {
+    grid-template-columns: repeat 6, 1fr;
+    grid-template-areas: "c1 c1 c2 c2 c3 c3" ". c4 c4 c5 c5 .";
   }
 }
 #content2 > div ul li {
@@ -574,34 +585,35 @@ textarea {
 ============= */
 #gallery ul {
   display: grid;
-  grid-template-areas: "g1" "g2";
 }
 @media (min-width: 768px) {
   #gallery ul {
-    grid-template-columns: auto 50%;
-    grid-template-areas: "g1 g2";
+    grid-template-columns: 50% auto;
   }
 }
 @media (min-width: 992px) {
   #gallery ul {
-    grid-template-columns: auto 40%;
-    grid-template-areas: "g1 g2";
+    grid-template-columns: 60% auto;
   }
 }
 @media (min-width: 1200px) {
   #gallery ul {
-    grid-template-columns: auto 35%;
+    grid-template-columns: 65% auto;
     grid-template-areas: "g1 g2" "g1 g3";
   }
 }
 #gallery ul li img {
   width: 100%;
 }
-#gallery ul #g1 {
-  grid-area: g1;
+@media (min-width: 1200px) {
+  #gallery ul #g1 {
+    grid-area: g1;
+  }
 }
-#gallery ul #g2 {
-  grid-area: g2;
+@media (min-width: 1200px) {
+  #gallery ul #g2 {
+    grid-area: g2;
+  }
 }
 #gallery ul #g3 {
   display: none;
@@ -609,6 +621,7 @@ textarea {
 @media (min-width: 1200px) {
   #gallery ul #g3 {
     display: list-item;
+    grid-area: g3;
   }
 }
 
