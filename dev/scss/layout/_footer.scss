@@ -10,7 +10,7 @@
     grid-template-areas: ". footer .";
 
 @include xl{
-    grid-template-columns: auto 1000px auto;
+    grid-template-columns: auto 1150px auto;
     }
 
     >div{
@@ -26,9 +26,22 @@
                 grid-template-columns: repeat (3, 1fr);
                 grid-template-areas: "locations newsletter followus";
                 }
-    section{
-        //border: 1px solid thistle;
+
+        section{
+            ul{
+                li{
+                    i{
+                        color: $green1;
+                    }
+                }
+            }
+            form{
+                button{
+                    background-color: $green1;
+                }
+            }
         }
+
         #locations{
             @include md{
                 grid-area: locations;

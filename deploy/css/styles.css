@@ -450,7 +450,7 @@ textarea {
 }
 @media (min-width: 1200px) {
   #footer {
-    grid-template-columns: auto 1000px auto;
+    grid-template-columns: auto 1150px auto;
   }
 }
 #footer > div {
@@ -469,6 +469,12 @@ textarea {
     grid-template-columns: repeat 3, 1fr;
     grid-template-areas: "locations newsletter followus";
   }
+}
+#footer > div section ul li i {
+  color: #779d86;
+}
+#footer > div section form button {
+  background-color: #779d86;
 }
 @media (min-width: 768px) {
   #footer > div #locations {
@@ -521,6 +527,9 @@ textarea {
 #content1 ul li > div {
   grid-area: content1;
 }
+#content1 ul li > div section div button {
+  background-color: #779d86;
+}
 
 /* =============
     content2
@@ -569,6 +578,9 @@ textarea {
 }
 #content2 > div ul li section div {
   grid-area: content2;
+}
+#content2 > div ul li section div button {
+  background-color: #779d86;
 }
 @media (min-width: 768px) {
   #content2 > div ul #c1 {
