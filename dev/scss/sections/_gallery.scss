@@ -4,8 +4,15 @@
 
 #gallery{
 
+    @include xl{
+        display: grid;
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". gallery .";
+    }
+
         ul{
             display: grid;
+            grid-area: gallery;
 
             @include md{
                 grid-template-columns: 50% auto;

@@ -611,8 +611,16 @@ textarea {
 /* =============
     gallery
 ============= */
+@media (min-width: 1200px) {
+  #gallery {
+    display: grid;
+    grid-template-columns: auto 1200px auto;
+    grid-template-areas: ". gallery .";
+  }
+}
 #gallery ul {
   display: grid;
+  grid-area: gallery;
 }
 @media (min-width: 768px) {
   #gallery ul {
