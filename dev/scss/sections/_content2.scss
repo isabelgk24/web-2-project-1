@@ -17,6 +17,9 @@
     @include md{
         grid-area: content2;
     }
+    h2{
+        color: $forest;
+    }
     ul{
 
         @include md{
@@ -45,6 +48,9 @@
 
                 div{
                     grid-area: content2;
+                    h3{
+                        color: $forest;
+                    }
                     button{
                         background-color: $green1;
                         color: white;

@@ -554,6 +554,9 @@ textarea {
     grid-area: content2;
   }
 }
+#content2 > div h2 {
+  color: #003505;
+}
 @media (min-width: 768px) {
   #content2 > div ul {
     display: grid;
@@ -581,6 +584,9 @@ textarea {
 }
 #content2 > div ul li section div {
   grid-area: content2;
+}
+#content2 > div ul li section div h3 {
+  color: #003505;
 }
 #content2 > div ul li section div button {
   background-color: #779d86;
