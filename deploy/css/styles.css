@@ -523,12 +523,14 @@ textarea {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". content1 .";
   background-color: #dadfd5;
+  color: #003505;
 }
 #content1 ul li > div {
   grid-area: content1;
 }
 #content1 ul li > div section div button {
   background-color: #779d86;
+  color: white;
 }
 
 /* =============

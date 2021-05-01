@@ -29,6 +29,7 @@
             grid-template-columns: 16px auto 16px;
             grid-template-areas: ". content1 .";
             background-color: $greengray;
+            color: $forest;
 
             >div{
                 grid-area: content1;
@@ -37,6 +38,7 @@
                     div{
                         button{
                             background-color: $green1;
+                            color: white;
                         }
                     }
                 }
