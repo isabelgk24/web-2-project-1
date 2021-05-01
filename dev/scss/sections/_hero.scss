@@ -3,42 +3,61 @@
 ============= */
 
 #hero{
-    img{
-        width: 100%;
+
+    background-image: url(../img/hero/1.jpg);
+    background-position: center 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+
+    @include md{
+        background-position: center;
+        height: 500px;
     }
-    ul{
-        @include md{
-            display: grid;
-            grid-template-columns: 40% auto;
-        }
-        @include lg{
-            grid-template-columns: 50% auto;
-        }
 
-        li{
-            display: grid;
-            grid-template-columns: 16px auto 16px;
-            grid-template-areas: ". hero .";
+    @include lg{
+        height: 700px;
+    }
 
-            @include xl{
+    @include xl{
+        height: 975px;
+    }
+
+    >div{
+        ul{
+            @include md{
                 display: grid;
-                grid-template-columns: auto 480px 16px;
+                grid-template-columns: 40% auto;
             }
-
-            a{
-                grid-area: hero;
-                //border: 1px solid red;
+            @include lg{
+                grid-template-columns: 50% auto;
             }
-        }
-        #heroa{
-            background-color: $green2;
-        }
-        #herob{
-            background-color: $green1;
-            @include xl{
+    
+            li{
                 display: grid;
-                grid-template-columns: 16px 480px auto;
+                grid-template-columns: 16px auto 16px;
+                grid-template-areas: ". hero .";
+    
+                @include xl{
+                    display: grid;
+                    grid-template-columns: auto 480px 16px;
+                }
+    
+                a{
+                    grid-area: hero;
+                    //border: 1px solid red;
+                }
+            }
+            #heroa{
+                background-color: $green2;
+            }
+            #herob{
+                background-color: $green1;
+                @include xl{
+                    display: grid;
+                    grid-template-columns: 16px 480px auto;
+                }
             }
         }
     }
-}
+} 

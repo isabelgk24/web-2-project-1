@@ -674,42 +674,62 @@ textarea {
 /* =============
     hero
 ============= */
-#hero img {
-  width: 100%;
+#hero {
+  background-image: url(../img/hero/1.jpg);
+  background-position: center 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
 }
 @media (min-width: 768px) {
-  #hero ul {
+  #hero {
+    background-position: center;
+    height: 500px;
+  }
+}
+@media (min-width: 992px) {
+  #hero {
+    height: 700px;
+  }
+}
+@media (min-width: 1200px) {
+  #hero {
+    height: 975px;
+  }
+}
+@media (min-width: 768px) {
+  #hero > div ul {
     display: grid;
     grid-template-columns: 40% auto;
   }
 }
 @media (min-width: 992px) {
-  #hero ul {
+  #hero > div ul {
     grid-template-columns: 50% auto;
   }
 }
-#hero ul li {
+#hero > div ul li {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero .";
 }
 @media (min-width: 1200px) {
-  #hero ul li {
+  #hero > div ul li {
     display: grid;
     grid-template-columns: auto 480px 16px;
   }
 }
-#hero ul li a {
+#hero > div ul li a {
   grid-area: hero;
 }
-#hero ul #heroa {
+#hero > div ul #heroa {
   background-color: #59866b;
 }
-#hero ul #herob {
+#hero > div ul #herob {
   background-color: #779d86;
 }
 @media (min-width: 1200px) {
-  #hero ul #herob {
+  #hero > div ul #herob {
     display: grid;
     grid-template-columns: 16px 480px auto;
   }
