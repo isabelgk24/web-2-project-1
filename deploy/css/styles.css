@@ -584,6 +584,7 @@ textarea {
 }
 #content2 > div ul li section div button {
   background-color: #779d86;
+  color: white;
 }
 @media (min-width: 768px) {
   #content2 > div ul #c1 {
@@ -726,4 +727,5 @@ textarea {
 }
 #search > div form button {
   background-color: #779d86;
+  color: white;
 }
