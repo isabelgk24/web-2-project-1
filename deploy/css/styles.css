@@ -475,6 +475,7 @@ textarea {
 }
 #footer > div section form button {
   background-color: #779d86;
+  color: white;
 }
 @media (min-width: 768px) {
   #footer > div #locations {
