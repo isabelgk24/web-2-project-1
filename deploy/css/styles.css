@@ -535,10 +535,17 @@ textarea {
 }
 #content1 ul li > div aside div {
   background-position: center;
+  background-size: cover;
   border: 4px white solid;
-  height: 85px;
-  width: 85px;
+  height: 100px;
+  width: 100px;
   border-radius: 100%;
+}
+#content1 ul li > div aside #heroa {
+  background-image: url("../img/content1/6.jpg");
+}
+#content1 ul li > div aside #herob {
+  background-image: url("../img/content1/5.jpg");
 }
 
 /* =============
