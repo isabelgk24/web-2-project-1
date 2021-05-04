@@ -3,7 +3,7 @@
 ============= */
 
 #content2{
-
+    
     @include md{
         display: grid;
         grid-template-columns: 16px auto 16px;
@@ -14,6 +14,7 @@
     }
 
 >div{
+    
     @include md{
         grid-area: content2;
     }
@@ -21,6 +22,8 @@
         color: $forest;
     }
     ul{
+        display: grid;
+        gap: 16px; 
 
         @include md{
             display: grid;
@@ -28,7 +31,6 @@
             grid-template-areas: "c1 c1 c2 c2"
             "c3 c3 c4 c4"
             ". c5 c5 .";
-            gap: 16px;
         }
         @include lg{
             grid-template-columns: repeat (6, 1fr);
@@ -48,6 +50,7 @@
 
                 div{
                     grid-area: content2;
+                
                     h3{
                         color: $forest;
                     }

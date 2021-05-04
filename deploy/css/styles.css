@@ -564,12 +564,15 @@ textarea {
 #content2 > div h2 {
   color: #003505;
 }
+#content2 > div ul {
+  display: grid;
+  gap: 16px;
+}
 @media (min-width: 768px) {
   #content2 > div ul {
     display: grid;
     grid-template-columns: repeat 4, 1fr;
     grid-template-areas: "c1 c1 c2 c2" "c3 c3 c4 c4" ". c5 c5 .";
-    gap: 16px;
   }
 }
 @media (min-width: 992px) {
@@ -693,62 +696,62 @@ textarea {
 /* =============
     hero
 ============= */
-#hero {
+#hero > div {
   background-image: url(../img/hero/1.jpg);
-  background-position: center 50px;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
 }
 @media (min-width: 768px) {
-  #hero {
+  #hero > div {
     background-position: center;
     height: 500px;
   }
 }
 @media (min-width: 992px) {
-  #hero {
+  #hero > div {
     height: 700px;
   }
 }
 @media (min-width: 1200px) {
-  #hero {
+  #hero > div {
     height: 975px;
   }
 }
 @media (min-width: 768px) {
-  #hero > div ul {
+  #hero ul {
     display: grid;
     grid-template-columns: 40% auto;
   }
 }
 @media (min-width: 992px) {
-  #hero > div ul {
+  #hero ul {
     grid-template-columns: 50% auto;
   }
 }
-#hero > div ul li {
+#hero ul li {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero .";
 }
 @media (min-width: 1200px) {
-  #hero > div ul li {
+  #hero ul li {
     display: grid;
     grid-template-columns: auto 480px 16px;
   }
 }
-#hero > div ul li a {
+#hero ul li a {
   grid-area: hero;
 }
-#hero > div ul #heroa {
+#hero ul #heroa {
   background-color: #59866b;
 }
-#hero > div ul #herob {
+#hero ul #herob {
   background-color: #779d86;
 }
 @media (min-width: 1200px) {
-  #hero > div ul #herob {
+  #hero ul #herob {
     display: grid;
     grid-template-columns: 16px 480px auto;
   }
