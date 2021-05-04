@@ -39,6 +39,20 @@
                         button{
                             background-color: $green1;
                             color: white;
+                            font-size: rem-calc(14px);
+                            font-weight: 700;
+                            font-family: 'noto sans kr';
+                        }
+                        h1{
+                            font-size: rem-calc(22px);
+                            font-weight: 400;
+                            font-family: 'merriweather';
+                            @include md{
+                                font-size: rem-calc(29px);
+                            }
+                            @include lg{
+                                font-size: rem-calc(31px);
+                            }
                         }
                         
                     }

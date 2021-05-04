@@ -533,6 +533,24 @@ textarea {
 #content1 ul li > div section div button {
   background-color: #779d86;
   color: white;
+  font-size: 0.875rem;
+  font-weight: 700;
+  font-family: "noto sans kr";
+}
+#content1 ul li > div section div h1 {
+  font-size: 1.375rem;
+  font-weight: 400;
+  font-family: "merriweather";
+}
+@media (min-width: 768px) {
+  #content1 ul li > div section div h1 {
+    font-size: 1.8125rem;
+  }
+}
+@media (min-width: 992px) {
+  #content1 ul li > div section div h1 {
+    font-size: 1.9375rem;
+  }
 }
 #content1 ul li > div aside div {
   background-position: center;
