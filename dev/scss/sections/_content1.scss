@@ -40,6 +40,18 @@
                             background-color: $green1;
                             color: white;
                         }
+                        section{
+
+                        }
+                        aside{
+                            div{
+                                background-position: center;
+                                border: 4px white solid;
+                                height: 85px;
+                                width: 85px;
+                                border-radius: 100%;
+                            }
+                        }
                     }
                 }
             }

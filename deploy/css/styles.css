@@ -533,6 +533,13 @@ textarea {
   background-color: #779d86;
   color: white;
 }
+#content1 ul li > div section div aside div {
+  background-position: center;
+  border: 4px white solid;
+  height: 85px;
+  width: 85px;
+  border-radius: 100%;
+}
 
 /* =============
     content2
@@ -621,11 +628,6 @@ textarea {
 /* =============
     gallery
 ============= */
-#gallery {
-  background-size: cover;
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
 @media (min-width: 1200px) {
   #gallery {
     display: grid;
@@ -636,11 +638,12 @@ textarea {
 #gallery ul {
   display: grid;
   grid-area: gallery;
-  grid-template-rows: repeat(3, 350px) "g1" "g2" "g2";
+  grid-template-rows: 360px 486px;
 }
 @media (min-width: 768px) {
   #gallery ul {
     grid-template-columns: 50% auto;
+    grid-template-rows: 640px;
   }
 }
 @media (min-width: 992px) {
@@ -652,11 +655,13 @@ textarea {
   #gallery ul {
     grid-template-columns: 65% auto;
     grid-template-areas: "g1 g2" "g1 g3";
-    grid-template-rows: repeat(2, 375px) "g1 g2" "g1 g3";
+    grid-template-rows: repeat(2, 375px);
   }
 }
-#gallery ul li img {
-  width: 100%;
+#gallery ul li {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 #gallery ul #g1 {
   background-image: url("../img/gallery/2.jpg");

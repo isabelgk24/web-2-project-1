@@ -4,9 +4,6 @@
 
 #gallery{
 
-    background-size: cover;
-    background-position: 0 0;
-    background-repeat: no-repeat;
 
     @include xl{
         display: grid;
@@ -17,14 +14,12 @@
         ul{
             display: grid;
             grid-area: gallery;
-            grid-template-rows: repeat(3, 350px)
-            "g1"
-            "g2"
-            "g2";
+            grid-template-rows: (360px 486px);
 
 
             @include md{
                 grid-template-columns: 50% auto;
+                grid-template-rows: (640px);
             }
             @include lg{
                 grid-template-columns: 60% auto;
@@ -34,15 +29,16 @@
                 grid-template-areas: 
                 "g1 g2"
                 "g1 g3";
-                grid-template-rows: repeat(2, 375px)
-                "g1 g2"
-                "g1 g3";
+                grid-template-rows: repeat(2, 375px);
             }
             
             li{
-                img{
-                    width: 100%;
-                }
+                // img{
+                //     width: 100%;
+                // }
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
             }
 
             #g1{
