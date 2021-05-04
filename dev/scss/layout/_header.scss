@@ -12,6 +12,19 @@
     >div{
         //border: 1 px solid red;
         grid-area: header;
+        section{
+            h1{
+                font-family: 'merriweather';
+                font-weight: 400;
+                font-size: rem-calc(48px);
+                @include md{
+                    font-size: rem-calc(60px);
+                }
+                @include lg{
+                    font-size: rem-calc(72px);
+                }
+            }
+        }
     }
 }
 
