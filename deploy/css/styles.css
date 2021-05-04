@@ -533,7 +533,7 @@ textarea {
   background-color: #779d86;
   color: white;
 }
-#content1 ul li > div section div aside div {
+#content1 ul li > div aside div {
   background-position: center;
   border: 4px white solid;
   height: 85px;
@@ -712,11 +712,6 @@ textarea {
 @media (min-width: 992px) {
   #hero > div {
     height: 700px;
-  }
-}
-@media (min-width: 1200px) {
-  #hero > div {
-    height: 975px;
   }
 }
 @media (min-width: 768px) {

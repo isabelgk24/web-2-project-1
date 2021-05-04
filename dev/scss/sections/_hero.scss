@@ -20,9 +20,9 @@
             height: 700px;
         }
     
-        @include xl{
-            height: 975px;
-        }
+        // @include xl{
+        //     height: 975px;
+        // }
     }
         ul{
             @include md{
