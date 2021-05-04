@@ -4,6 +4,10 @@
 
 #gallery{
 
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+
     @include xl{
         display: grid;
         grid-template-columns: auto 1200px auto;
@@ -13,6 +17,11 @@
         ul{
             display: grid;
             grid-area: gallery;
+            grid-template-rows: repeat(3, 350px)
+            "g1"
+            "g2"
+            "g2";
+
 
             @include md{
                 grid-template-columns: 50% auto;
@@ -25,6 +34,9 @@
                 grid-template-areas: 
                 "g1 g2"
                 "g1 g3";
+                grid-template-rows: repeat(2, 375px)
+                "g1 g2"
+                "g1 g3";
             }
             
             li{
@@ -34,16 +46,19 @@
             }
 
             #g1{
+                background-image: url("../img/gallery/2.jpg");
                 @include xl{
                     grid-area: g1;
                 }
             }
             #g2{
+                background-image: url("../img/gallery/3.jpg");
                 @include xl{
                     grid-area: g2;
                 }
             }
             #g3{
+                background-image: url("../img/gallery/4.jpg");
                 display: none;
                 @include xl{
                     display: list-item;
@@ -51,4 +66,4 @@
                 }
             }
         }
-}
+} 

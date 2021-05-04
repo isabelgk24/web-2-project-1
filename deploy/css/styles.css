@@ -621,6 +621,11 @@ textarea {
 /* =============
     gallery
 ============= */
+#gallery {
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
 @media (min-width: 1200px) {
   #gallery {
     display: grid;
@@ -631,6 +636,7 @@ textarea {
 #gallery ul {
   display: grid;
   grid-area: gallery;
+  grid-template-rows: repeat(3, 350px) "g1" "g2" "g2";
 }
 @media (min-width: 768px) {
   #gallery ul {
@@ -646,15 +652,22 @@ textarea {
   #gallery ul {
     grid-template-columns: 65% auto;
     grid-template-areas: "g1 g2" "g1 g3";
+    grid-template-rows: repeat(2, 375px) "g1 g2" "g1 g3";
   }
 }
 #gallery ul li img {
   width: 100%;
 }
+#gallery ul #g1 {
+  background-image: url("../img/gallery/2.jpg");
+}
 @media (min-width: 1200px) {
   #gallery ul #g1 {
     grid-area: g1;
   }
+}
+#gallery ul #g2 {
+  background-image: url("../img/gallery/3.jpg");
 }
 @media (min-width: 1200px) {
   #gallery ul #g2 {
@@ -662,6 +675,7 @@ textarea {
   }
 }
 #gallery ul #g3 {
+  background-image: url("../img/gallery/4.jpg");
   display: none;
 }
 @media (min-width: 1200px) {
