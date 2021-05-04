@@ -589,6 +589,19 @@ textarea {
 }
 #content2 > div h2 {
   color: #003505;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: "merriweather";
+}
+@media (min-width: 768px) {
+  #content2 > div h2 {
+    font-size: 1.75rem;
+  }
+}
+@media (min-width: 992px) {
+  #content2 > div h2 {
+    font-size: 2.3125rem;
+  }
 }
 #content2 > div ul {
   display: grid;
@@ -621,12 +634,23 @@ textarea {
 #content2 > div ul li section div {
   grid-area: content2;
 }
+#content2 > div ul li section div p {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "noto sans kr";
+}
 #content2 > div ul li section div h3 {
   color: #003505;
+  font-size: 1.6875rem;
+  font-weight: 700;
+  font-family: "merriweather";
 }
 #content2 > div ul li section div button {
   background-color: #779d86;
   color: white;
+  font-size: 0.875rem;
+  font-weight: 700;
+  font-family: "noto sans kr";
 }
 @media (min-width: 768px) {
   #content2 > div ul #c1 {

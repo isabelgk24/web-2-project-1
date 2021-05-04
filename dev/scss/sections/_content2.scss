@@ -20,6 +20,15 @@
     }
     h2{
         color: $forest;
+        font-size: rem-calc(20px);
+        font-weight: 700;
+        font-family: 'merriweather';
+        @include md{
+            font-size: rem-calc(28px);
+        }
+        @include lg{
+            font-size: rem-calc(37px);
+        }
     }
     ul{
         display: grid;
@@ -50,13 +59,24 @@
 
                 div{
                     grid-area: content2;
+                    p{
+                        font-size: rem-calc(16px);
+                        font-weight: 400;
+                        font-family: 'noto sans kr';
+                    }
                 
                     h3{
                         color: $forest;
+                        font-size: rem-calc(27px);
+                        font-weight: 700;
+                        font-family: 'merriweather';
                     }
                     button{
                         background-color: $green1;
                         color: white;
+                        font-size: rem-calc(14px);
+                        font-weight: 700;
+                        font-family: 'noto sans kr';
                     }
                 }
 
