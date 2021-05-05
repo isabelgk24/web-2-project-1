@@ -2,7 +2,7 @@
     Footer
 ============= */
 
-#footer{
+#footer{ 
     background-color: $green3;
     color: $greengray;
     display: grid;
@@ -28,10 +28,27 @@
                 }
 
         section{
+            h3{
+                font-size: rem-calc(20px);
+                font-weight: 700;
+                font-family: 'merriweather';
+            }
+            section{
+                h4{
+                font-size: rem-calc(16px);
+                font-weight: 700;
+                font-family: 'merriweather';
+                }
+            }
             ul{
                 li{
                     i{
                         color: $green1;
+                    }
+                    address{
+                        font-size: rem-calc(12px);
+                        font-weight: 400;
+                        font-family: 'noto sans kr';
                     }
                 }
             }
@@ -39,6 +56,34 @@
                 button{
                     background-color: $green1;
                     color: white;
+                    font-size: rem-calc(14px);
+                    font-weight: 700;
+                    font-family: 'noto sans kr';
+                }
+            }
+        }
+        section{
+            form{
+                input{
+                    font-weight: 700;
+                    font-size: rem-calc(14px);
+                    font-family: 'noto sans kr';
+                    color: $green3;
+
+                    &::placeholder{
+                        // Chrome, Firefox, Opera, Safari 10.1+
+                        color: $green3;
+                        // Firefox
+                        opacity: 1;
+                    }
+                    &:-ms-input-placeholder {
+                        // internet explorer 10-11
+                        color: $green3;
+                    }
+                    &::-ms-input-placeholder {
+                        // microsoft edge
+                        color: $green3;
+                    }
                 }
             }
         }

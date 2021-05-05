@@ -471,12 +471,46 @@ textarea {
     grid-template-areas: "locations newsletter followus";
   }
 }
+#footer > div section h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: "merriweather";
+}
+#footer > div section section h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "merriweather";
+}
 #footer > div section ul li i {
   color: #779d86;
+}
+#footer > div section ul li address {
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: "noto sans kr";
 }
 #footer > div section form button {
   background-color: #779d86;
   color: white;
+  font-size: 0.875rem;
+  font-weight: 700;
+  font-family: "noto sans kr";
+}
+#footer > div section form input {
+  font-weight: 700;
+  font-size: 0.875rem;
+  font-family: "noto sans kr";
+  color: #37644d;
+}
+#footer > div section form input::placeholder {
+  color: #37644d;
+  opacity: 1;
+}
+#footer > div section form input:-ms-input-placeholder {
+  color: #37644d;
+}
+#footer > div section form input::-ms-input-placeholder {
+  color: #37644d;
 }
 @media (min-width: 768px) {
   #footer > div #locations {
