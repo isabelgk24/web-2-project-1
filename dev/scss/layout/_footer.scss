@@ -40,11 +40,23 @@
                 font-family: 'merriweather';
                 }
             }
-            ul{
+            #social{ 
+                display: flex;
+                justify-content: left;
+
+                @include lg{
+                    justify-content: left;
+                }
                 li{
+                
                     i{
                         color: $green1;
                     }
+                }
+            }
+            ul{ 
+                
+                li{
                     address{
                         font-size: rem-calc(12px);
                         font-weight: 400;

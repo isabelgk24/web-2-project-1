@@ -481,7 +481,16 @@ textarea {
   font-weight: 700;
   font-family: "merriweather";
 }
-#footer > div section ul li i {
+#footer > div section #social {
+  display: flex;
+  justify-content: left;
+}
+@media (min-width: 992px) {
+  #footer > div section #social {
+    justify-content: left;
+  }
+}
+#footer > div section #social li i {
   color: #779d86;
 }
 #footer > div section ul li address {
@@ -604,16 +613,26 @@ textarea {
 /* =============
     content2
 ============= */
+#content2 {
+  padding: 16px;
+}
 @media (min-width: 768px) {
   #content2 {
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". content2 .";
+    padding: 32px;
+  }
+}
+@media (min-width: 992px) {
+  #content2 {
+    padding: 60px;
   }
 }
 @media (min-width: 1200px) {
   #content2 {
     grid-template-columns: auto 1200px auto;
+    padding: 64px;
   }
 }
 @media (min-width: 768px) {
@@ -626,6 +645,7 @@ textarea {
   font-size: 1.25rem;
   font-weight: 700;
   font-family: "merriweather";
+  padding: 8px;
 }
 @media (min-width: 768px) {
   #content2 > div h2 {
@@ -667,17 +687,20 @@ textarea {
 }
 #content2 > div ul li section div {
   grid-area: content2;
+  padding: 8px 8px 24px;
 }
 #content2 > div ul li section div p {
   font-size: 1rem;
   font-weight: 400;
   font-family: "noto sans kr";
+  padding: 5px 0px 16px;
 }
 #content2 > div ul li section div h3 {
   color: #003505;
   font-size: 1.6875rem;
   font-weight: 700;
   font-family: "merriweather";
+  padding: 5px 0px 20px;
 }
 #content2 > div ul li section div button {
   background-color: #779d86;
@@ -685,6 +708,13 @@ textarea {
   font-size: 0.875rem;
   font-weight: 700;
   font-family: "noto sans kr";
+  border: none;
+  padding: 3px 6px;
+  transition: 0.25s;
+}
+#content2 > div ul li section div button:hover {
+  background-color: #37644d;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   #content2 > div ul #c1 {

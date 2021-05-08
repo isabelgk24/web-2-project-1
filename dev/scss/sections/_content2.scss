@@ -3,14 +3,21 @@
 ============= */
 
 #content2{
+
+    padding: 16px;
     
     @include md{
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". content2 .";
+        padding: 32px;
+    }
+    @include lg{
+        padding: 60px;
     }
     @include xl{
         grid-template-columns: auto 1200px auto;
+        padding: 64px;
     }
 
 >div{
@@ -23,6 +30,7 @@
         font-size: rem-calc(20px);
         font-weight: 700;
         font-family: 'merriweather';
+        padding: 8px;
         @include md{
             font-size: rem-calc(28px);
         }
@@ -59,10 +67,12 @@
 
                 div{
                     grid-area: content2;
+                    padding: 8px 8px 24px;
                     p{
                         font-size: rem-calc(16px);
                         font-weight: 400;
                         font-family: 'noto sans kr';
+                        padding: 5px 0px 16px;
                     }
                 
                     h3{
@@ -70,6 +80,7 @@
                         font-size: rem-calc(27px);
                         font-weight: 700;
                         font-family: 'merriweather';
+                        padding: 5px 0px 20px;
                     }
                     button{
                         background-color: $green1;
@@ -77,6 +88,14 @@
                         font-size: rem-calc(14px);
                         font-weight: 700;
                         font-family: 'noto sans kr';
+                        border: none;
+                        padding: 3px 6px;
+                        transition: .25s;
+
+                        &:hover{
+                        background-color: $green3;
+                        cursor: pointer;
+                        }
                     }
                 }
 
