@@ -18,12 +18,13 @@
 
             form{
                 input{
+                    border: none;
                     @include md{
                         font-size: rem-calc(30px);
                     }
                     @include lg{
                         font-size: rem-calc(35px);
-                    }
+                    } 
                     font-weight: 300;
                     font-family: 'noto sans kr';
                     color: $green1;
@@ -46,6 +47,24 @@
                 button{
                     background-color: $green1;
                     color: white;
+                    border: none;
+                    padding: 3px 6px;
+                    transition: .25s;
+                    border-radius: 5px;
+                    font-size: 15px;
+
+                    @include md{
+                        padding: 5px 10px;
+                        font-size: 25px;
+                    }
+                    @include lg{
+                        font-size: 30px;
+                    }
+
+                    &:hover{
+                        background-color: $green3;
+                        cursor: pointer;
+                    }
                 }
             }
         }

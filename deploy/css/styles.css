@@ -372,7 +372,7 @@ body {
   font-family: "Merriweather", serif;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
 }
@@ -853,6 +853,7 @@ textarea {
   grid-area: search;
 }
 #search > div form input {
+  border: none;
   font-weight: 300;
   font-family: "noto sans kr";
   color: #779d86;
@@ -880,4 +881,24 @@ textarea {
 #search > div form button {
   background-color: #779d86;
   color: white;
+  border: none;
+  padding: 3px 6px;
+  transition: 0.25s;
+  border-radius: 5px;
+  font-size: 15px;
+}
+@media (min-width: 768px) {
+  #search > div form button {
+    padding: 5px 10px;
+    font-size: 25px;
+  }
+}
+@media (min-width: 992px) {
+  #search > div form button {
+    font-size: 30px;
+  }
+}
+#search > div form button:hover {
+  background-color: #37644d;
+  cursor: pointer;
 }
