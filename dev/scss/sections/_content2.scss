@@ -73,6 +73,9 @@
                         font-weight: 400;
                         font-family: 'noto sans kr';
                         padding: 5px 0px 16px;
+                        @include md{
+                            
+                        }
                     }
                 
                     h3{

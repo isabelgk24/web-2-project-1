@@ -443,15 +443,27 @@ textarea {
     Footer
 ============= */
 #footer {
+  padding: 16px 0px;
   background-color: #37644d;
   color: #dadfd5;
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
 }
+@media (min-width: 768px) {
+  #footer {
+    padding: 32px;
+  }
+}
+@media (min-width: 992px) {
+  #footer {
+    padding: 60px;
+  }
+}
 @media (min-width: 1200px) {
   #footer {
     grid-template-columns: auto 1150px auto;
+    padding: 64px;
   }
 }
 #footer > div {
@@ -475,6 +487,7 @@ textarea {
   font-size: 1.25rem;
   font-weight: 700;
   font-family: "merriweather";
+  padding: 0px 0px 16px 0px;
 }
 #footer > div section section h4 {
   font-size: 1rem;
@@ -483,12 +496,9 @@ textarea {
 }
 #footer > div section #social {
   display: flex;
-  justify-content: left;
 }
-@media (min-width: 992px) {
-  #footer > div section #social {
-    justify-content: left;
-  }
+#footer > div section #social li {
+  margin: 0px 16px 0px 0px;
 }
 #footer > div section #social li i {
   color: #779d86;
@@ -504,8 +514,18 @@ textarea {
   font-size: 0.875rem;
   font-weight: 700;
   font-family: "noto sans kr";
+  border: none;
+  padding: 4px 6px;
+  transition: 0.25s;
+}
+#footer > div section form button:hover {
+  background-color: #37644d;
+  cursor: pointer;
 }
 #footer > div section form input {
+  border: none;
+  background-color: #dadfd5;
+  padding: 16px 8px;
   font-weight: 700;
   font-size: 0.875rem;
   font-family: "noto sans kr";
@@ -870,6 +890,7 @@ textarea {
     search
 ============= */
 #search {
+  padding: 16px 0px 16px 0px;
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". search .";
@@ -881,6 +902,10 @@ textarea {
 }
 #search > div {
   grid-area: search;
+}
+#search > div form {
+  display: flex;
+  justify-content: left;
 }
 #search > div form input {
   border: none;

@@ -3,14 +3,23 @@
 ============= */
 
 #footer{ 
+    padding: 16px 0px;
     background-color: $green3;
     color: $greengray;
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer .";
 
+    @include md{
+        padding: 32px;
+    }
+    @include lg{
+        padding: 60px;
+    }
+
 @include xl{
     grid-template-columns: auto 1150px auto;
+    padding: 64px;
     }
 
     >div{
@@ -32,6 +41,7 @@
                 font-size: rem-calc(20px);
                 font-weight: 700;
                 font-family: 'merriweather';
+                padding: 0px 0px 16px 0px;
             }
             section{
                 h4{
@@ -42,13 +52,8 @@
             }
             #social{ 
                 display: flex;
-                justify-content: left;
-
-                @include lg{
-                    justify-content: left;
-                }
                 li{
-                
+                margin: 0px 16px 0px 0px;
                     i{
                         color: $green1;
                     }
@@ -71,12 +76,23 @@
                     font-size: rem-calc(14px);
                     font-weight: 700;
                     font-family: 'noto sans kr';
+                    border: none;
+                    padding: 4px 6px;
+                    transition: .25s;
+
+                    &:hover{
+                        background-color: $green3;
+                        cursor: pointer;
+                    }
                 }
             }
         }
         section{
             form{
                 input{
+                    border: none;
+                    background-color: $greengray;
+                    padding: 16px 8px;
                     font-weight: 700;
                     font-size: rem-calc(14px);
                     font-family: 'noto sans kr';

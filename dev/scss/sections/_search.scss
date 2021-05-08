@@ -7,7 +7,7 @@
     @include xl{
         grid-template-columns: auto 1000px auto;
     }
-    
+    padding: 16px 0px 16px 0px;
     display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". search .";
@@ -15,6 +15,7 @@
         >div{
             //border: 1px solid red;
             grid-area: search;
+
 
             form{
                 input{
@@ -44,6 +45,8 @@
                         color: $green1;
                     }
                 }
+                display: flex;
+                justify-content: left;
                 button{
                     background-color: $green1;
                     color: white;
