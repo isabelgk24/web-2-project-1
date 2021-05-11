@@ -4,6 +4,8 @@
 
 #content1{
 
+    padding: 16px 0px;
+
     @include md{
         display: grid;
         grid-template-columns: 16px auto 16px;
