@@ -67,6 +67,18 @@
                         font-weight: 400;
                         font-family: 'noto sans kr';
                     }
+                
+                        a:link, a:visited{
+                            text-decoration: none;
+                            color: $forest;
+                            font-size: rem-calc(20);
+                            transition: .25s;
+        
+                            &:hover, &:active{
+                                color: $white;
+                            }
+                        }
+                    
                 }
             }
             form{

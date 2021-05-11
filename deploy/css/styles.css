@@ -508,6 +508,15 @@ textarea {
   font-weight: 400;
   font-family: "noto sans kr";
 }
+#footer > div section ul li a:link, #footer > div section ul li a:visited {
+  text-decoration: none;
+  color: #003505;
+  font-size: 1.25rem;
+  transition: 0.25s;
+}
+#footer > div section ul li a:link:hover, #footer > div section ul li a:link:active, #footer > div section ul li a:visited:hover, #footer > div section ul li a:visited:active {
+  color: #fff;
+}
 #footer > div section form button {
   background-color: #779d86;
   color: white;
@@ -566,8 +575,14 @@ textarea {
 @media (min-width: 768px) {
   #content1 {
     display: grid;
+    padding: 16px 0px 32px 0px;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". content1 .";
+  }
+}
+@media (min-width: 992px) {
+  #content1 {
+    padding: 32px 0px 48px 0px;
   }
 }
 @media (min-width: 1200px) {
@@ -587,6 +602,7 @@ textarea {
   }
 }
 #content1 ul li {
+  padding: 16px 0px;
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". content1 .";
@@ -595,6 +611,11 @@ textarea {
 }
 #content1 ul li > div {
   grid-area: content1;
+  display: flex;
+  align-content: right;
+}
+#content1 ul li > div section div {
+  padding: 30px 0px 20px 0px;
 }
 #content1 ul li > div section div button {
   background-color: #779d86;
@@ -602,8 +623,16 @@ textarea {
   font-size: 0.875rem;
   font-weight: 700;
   font-family: "noto sans kr";
+  border: none;
+  padding: 3px 6px;
+  transition: 0.25s;
+}
+#content1 ul li > div section div button:hover {
+  background-color: #37644d;
+  cursor: pointer;
 }
 #content1 ul li > div section div h1 {
+  padding: 8px 0px 0px 0px;
   font-size: 1.375rem;
   font-weight: 400;
   font-family: "merriweather";
@@ -619,6 +648,7 @@ textarea {
   }
 }
 #content1 ul li > div aside div {
+  align-items: right;
   background-position: center;
   background-size: cover;
   border: 4px white solid;
@@ -863,9 +893,19 @@ textarea {
   }
 }
 #hero ul li {
+  padding: 16px 0px;
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero .";
+}
+#hero ul li a:link, #hero ul li a:visited {
+  text-decoration: none;
+  color: #003505;
+  font-size: 1.25rem;
+  transition: 0.25s;
+}
+#hero ul li a:link:hover, #hero ul li a:link:active, #hero ul li a:visited:hover, #hero ul li a:visited:active {
+  color: #fff;
 }
 @media (min-width: 1200px) {
   #hero ul li {
@@ -875,6 +915,31 @@ textarea {
 }
 #hero ul li a {
   grid-area: hero;
+}
+#hero ul li div h3 {
+  font-size: 1.5625rem;
+  font-weight: 900;
+  font-family: "merriweather";
+}
+#hero ul li div h4 {
+  font-size: 1rem;
+  font-weight: 900;
+  font-family: "noto sans kr";
+}
+#hero ul li div h3 {
+  font-size: 1.5625rem;
+  font-weight: 900;
+  font-family: "merriweather";
+}
+#hero ul li div h5 {
+  font-size: 1.125rem;
+  font-weight: 900;
+  font-family: "noto sans kr";
+}
+#hero ul li div h6 {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "noto sans kr";
 }
 #hero ul #heroa {
   background-color: #59866b;
@@ -908,7 +973,7 @@ textarea {
 }
 #search > div form {
   display: flex;
-  justify-content: left;
+  justify-content: right;
 }
 #search > div form input {
   border: none;

@@ -25,6 +25,7 @@
         // }
     }
         ul{
+
             @include md{
                 display: grid;
                 grid-template-columns: 40% auto;
@@ -34,6 +35,18 @@
             }
     
             li{
+
+                padding: 16px 0px;
+                a:link, a:visited{
+                    text-decoration: none;
+                    color: $forest;
+                    font-size: rem-calc(20);
+                    transition: .25s;
+
+                    &:hover, &:active{
+                        color: $white;
+                    }
+                }
                 display: grid;
                 grid-template-columns: 16px auto 16px;
                 grid-template-areas: ". hero .";
@@ -46,6 +59,33 @@
                 a{
                     grid-area: hero;
                     //border: 1px solid red;
+                }
+                div{
+                    h3{
+                        font-size: rem-calc(25px);
+                        font-weight: 900;
+                        font-family: 'merriweather';
+                    }
+                    h4{
+                        font-size: rem-calc(16px);
+                        font-weight: 900;
+                        font-family: 'noto sans kr';
+                    }
+                    h3{
+                        font-size: rem-calc(25px);
+                        font-weight: 900;
+                        font-family: 'merriweather';
+                    }
+                    h5{
+                        font-size: rem-calc(18px);
+                        font-weight: 900;
+                        font-family: 'noto sans kr';
+                    }
+                    h6{
+                        font-size: rem-calc(16px);
+                        font-weight: 500;
+                        font-family: 'noto sans kr';
+                    }
                 }
             }
             #heroa{
