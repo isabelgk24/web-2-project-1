@@ -503,11 +503,6 @@ textarea {
 #footer > div section #social li i {
   color: #779d86;
 }
-#footer > div section ul li address {
-  font-size: 0.75rem;
-  font-weight: 400;
-  font-family: "noto sans kr";
-}
 #footer > div section ul li a:link, #footer > div section ul li a:visited {
   text-decoration: none;
   color: #003505;
@@ -516,6 +511,11 @@ textarea {
 }
 #footer > div section ul li a:link:hover, #footer > div section ul li a:link:active, #footer > div section ul li a:visited:hover, #footer > div section ul li a:visited:active {
   color: #fff;
+}
+#footer > div section ul li address {
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: "noto sans kr";
 }
 #footer > div section form button {
   background-color: #779d86;
