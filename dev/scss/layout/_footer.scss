@@ -48,25 +48,38 @@
                 font-size: rem-calc(16px);
                 font-weight: 700;
                 font-family: 'merriweather';
+                margin-top: 16px;
+                margin-bottom: 16px;
                 }
             }
             #social{ 
                 display: flex;
                 li{
-                margin: 0px 16px 0px 0px;
                     i{
-                        color: $green1;
+                        color: $greengray;
                     }
                 }
             }
             ul{ 
                 
                 li{
+                    display: flex;
+                    margin-bottom: 24px;
+
+                    i{
+                        color: $green1;
+                        font-size: rem-calc(20);
+                        margin-right: 10px;
+                    }
+                   
                     a:link, a:visited{
                         text-decoration: none;
-                        color: $forest;
-                        font-size: rem-calc(20);
+                        color: $greengray;
                         transition: .25s;
+                        font-size: rem-calc(12);
+                        font-weight: 400;
+                        font-family: 'noto sans kr';
+                        font-style: normal;
     
                         &:hover, &:active{
                             color: $white;
@@ -76,6 +89,7 @@
                         font-size: rem-calc(12px);
                         font-weight: 400;
                         font-family: 'noto sans kr';
+                        font-style: normal;
                     }
                     
                 }
@@ -90,9 +104,11 @@
                     border: none;
                     padding: 4px 6px;
                     transition: .25s;
+                    margin-top: 16px;
+                    align-content: right;
 
                     &:hover{
-                        background-color: $green3;
+                        background-color: $forest;
                         cursor: pointer;
                     }
                 }
@@ -108,6 +124,7 @@
                     font-size: rem-calc(14px);
                     font-family: 'noto sans kr';
                     color: $green3;
+                    width: 90%;
 
                     &::placeholder{
                         // Chrome, Firefox, Opera, Safari 10.1+
@@ -138,8 +155,26 @@
             }
         }
         #followus{
+            align-items: right;
             @include md{
                 grid-area: followus;
+            }
+            ul{
+                display: flex;
+                margin-top: 0 8px;
+                li{
+                    margin: 0px 15px;
+                }
+            }
+        }
+        #news{
+            @include lg{
+                text-align: center;
+            }
+        }
+        #follow{
+            @include lg{
+                text-align: right;
             }
         }
     }

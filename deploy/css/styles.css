@@ -499,21 +499,32 @@ textarea {
   font-size: 1rem;
   font-weight: 700;
   font-family: "merriweather";
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 #footer > div section #social {
   display: flex;
 }
-#footer > div section #social li {
-  margin: 0px 16px 0px 0px;
-}
 #footer > div section #social li i {
+  color: #dadfd5;
+}
+#footer > div section ul li {
+  display: flex;
+  margin-bottom: 24px;
+}
+#footer > div section ul li i {
   color: #779d86;
+  font-size: 1.25rem;
+  margin-right: 10px;
 }
 #footer > div section ul li a:link, #footer > div section ul li a:visited {
   text-decoration: none;
-  color: #003505;
-  font-size: 1.25rem;
+  color: #dadfd5;
   transition: 0.25s;
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: "noto sans kr";
+  font-style: normal;
 }
 #footer > div section ul li a:link:hover, #footer > div section ul li a:link:active, #footer > div section ul li a:visited:hover, #footer > div section ul li a:visited:active {
   color: #fff;
@@ -522,6 +533,7 @@ textarea {
   font-size: 0.75rem;
   font-weight: 400;
   font-family: "noto sans kr";
+  font-style: normal;
 }
 #footer > div section form button {
   background-color: #779d86;
@@ -532,9 +544,11 @@ textarea {
   border: none;
   padding: 4px 6px;
   transition: 0.25s;
+  margin-top: 16px;
+  align-content: right;
 }
 #footer > div section form button:hover {
-  background-color: #37644d;
+  background-color: #003505;
   cursor: pointer;
 }
 #footer > div section form input {
@@ -545,6 +559,7 @@ textarea {
   font-size: 0.875rem;
   font-family: "noto sans kr";
   color: #37644d;
+  width: 90%;
 }
 #footer > div section form input::placeholder {
   color: #37644d;
@@ -566,9 +581,29 @@ textarea {
     grid-area: newsletter;
   }
 }
+#footer > div #followus {
+  align-items: right;
+}
 @media (min-width: 768px) {
   #footer > div #followus {
     grid-area: followus;
+  }
+}
+#footer > div #followus ul {
+  display: flex;
+  margin-top: 0 8px;
+}
+#footer > div #followus ul li {
+  margin: 0px 15px;
+}
+@media (min-width: 992px) {
+  #footer > div #news {
+    text-align: center;
+  }
+}
+@media (min-width: 992px) {
+  #footer > div #follow {
+    text-align: right;
   }
 }
 
