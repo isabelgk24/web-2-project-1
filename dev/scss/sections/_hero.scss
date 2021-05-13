@@ -37,14 +37,34 @@
             li{
 
                 padding: 16px 0px;
+                align-items: center;
                 a:link, a:visited{
+                    grid-area: hero;
                     text-decoration: none;
                     color: $forest;
-                    font-size: rem-calc(20);
                     transition: .25s;
+
+                    display: flex;
+
+                    // div{
+
+                    // }
 
                     &:hover, &:active{
                         color: $white;
+                    }
+
+                        .part2{
+                            margin-left: auto;
+                            display: flex;
+                            align-items: center;
+                            h5{
+                                display: none;
+                                padding-right: 16px;
+                                @include lg{
+                                    display: block;
+                                }
+                        }
                     }
                 }
                 display: grid;
@@ -59,7 +79,6 @@
                 a{
                     grid-area: hero;
                     //border: 1px solid red;
-                }
                 div{
                     h3{
                         font-size: rem-calc(25px);
@@ -87,6 +106,7 @@
                         font-family: 'noto sans kr';
                     }
                 }
+            }
             }
             #heroa{
                 background-color: $green2;

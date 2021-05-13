@@ -900,18 +900,34 @@ textarea {
 }
 #hero ul li {
   padding: 16px 0px;
+  align-items: center;
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero .";
 }
 #hero ul li a:link, #hero ul li a:visited {
+  grid-area: hero;
   text-decoration: none;
   color: #003505;
-  font-size: 1.25rem;
   transition: 0.25s;
+  display: flex;
 }
 #hero ul li a:link:hover, #hero ul li a:link:active, #hero ul li a:visited:hover, #hero ul li a:visited:active {
   color: #fff;
+}
+#hero ul li a:link .part2, #hero ul li a:visited .part2 {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+#hero ul li a:link .part2 h5, #hero ul li a:visited .part2 h5 {
+  display: none;
+  padding-right: 16px;
+}
+@media (min-width: 992px) {
+  #hero ul li a:link .part2 h5, #hero ul li a:visited .part2 h5 {
+    display: block;
+  }
 }
 @media (min-width: 1200px) {
   #hero ul li {
@@ -922,27 +938,27 @@ textarea {
 #hero ul li a {
   grid-area: hero;
 }
-#hero ul li div h3 {
+#hero ul li a div h3 {
   font-size: 1.5625rem;
   font-weight: 900;
   font-family: "merriweather";
 }
-#hero ul li div h4 {
+#hero ul li a div h4 {
   font-size: 1rem;
   font-weight: 900;
   font-family: "noto sans kr";
 }
-#hero ul li div h3 {
+#hero ul li a div h3 {
   font-size: 1.5625rem;
   font-weight: 900;
   font-family: "merriweather";
 }
-#hero ul li div h5 {
+#hero ul li a div h5 {
   font-size: 1.125rem;
   font-weight: 900;
   font-family: "noto sans kr";
 }
-#hero ul li div h6 {
+#hero ul li a div h6 {
   font-size: 1rem;
   font-weight: 500;
   font-family: "noto sans kr";
