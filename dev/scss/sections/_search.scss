@@ -7,7 +7,13 @@
     @include xl{
         grid-template-columns: auto 1000px auto;
     }
-    padding: 16px 0px 16px 0px;
+    padding: 16px 0px;
+    @include md{
+        padding: 21px 0px;
+    }
+    @include lg{
+        padding: 24px 0px;
+    }
     display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". search .";
@@ -18,14 +24,30 @@
 
 
             form{
+                display: grid;
+                    grid-template-columns: 80% auto;
+                    gap: 8px;
+
+                    @include md{
+                        gap: 16px;
+                    }
                 input{
+                    background-color: transparent;
                     border: none;
+                    border-bottom: 1px solid $green1;
+                    width: 100%;
+
+                    // display: grid;
+                    // grid-template-columns: 80% auto;
+                    // gap: 40px;
+
                     @include md{
                         font-size: rem-calc(30px);
                     }
                     @include lg{
                         font-size: rem-calc(35px);
                     } 
+
                     font-weight: 300;
                     font-family: 'noto sans kr';
                     color: $green1;
@@ -47,6 +69,7 @@
                 }
                 display: flex;
                 justify-content: right;
+                
                 button{
                     
                     background-color: $green1;

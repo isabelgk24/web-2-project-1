@@ -964,7 +964,7 @@ textarea {
     search
 ============= */
 #search {
-  padding: 16px 0px 16px 0px;
+  padding: 16px 0px;
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". search .";
@@ -974,15 +974,36 @@ textarea {
     grid-template-columns: auto 1000px auto;
   }
 }
+@media (min-width: 768px) {
+  #search {
+    padding: 21px 0px;
+  }
+}
+@media (min-width: 992px) {
+  #search {
+    padding: 24px 0px;
+  }
+}
 #search > div {
   grid-area: search;
 }
 #search > div form {
+  display: grid;
+  grid-template-columns: 80% auto;
+  gap: 8px;
   display: flex;
   justify-content: right;
 }
+@media (min-width: 768px) {
+  #search > div form {
+    gap: 16px;
+  }
+}
 #search > div form input {
+  background-color: transparent;
   border: none;
+  border-bottom: 1px solid #779d86;
+  width: 100%;
   font-weight: 300;
   font-family: "noto sans kr";
   color: #779d86;
