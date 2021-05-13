@@ -536,6 +536,7 @@ textarea {
   font-style: normal;
 }
 #footer > div section form button {
+  display: flex;
   background-color: #779d86;
   color: white;
   font-size: 0.875rem;
@@ -545,7 +546,18 @@ textarea {
   padding: 4px 6px;
   transition: 0.25s;
   margin-top: 16px;
-  align-content: right;
+  margin-bottom: 32px;
+  margin-left: 76%;
+}
+@media (min-width: 768px) {
+  #footer > div section form button {
+    margin-left: 78%;
+  }
+}
+@media (min-width: 992px) {
+  #footer > div section form button {
+    margin-left: auto;
+  }
 }
 #footer > div section form button:hover {
   background-color: #003505;
@@ -581,20 +593,11 @@ textarea {
     grid-area: newsletter;
   }
 }
-#footer > div #followus {
-  align-items: right;
-}
-@media (min-width: 768px) {
-  #footer > div #followus {
-    grid-area: followus;
-  }
-}
 #footer > div #followus ul {
-  display: flex;
   margin-top: 0 8px;
 }
 #footer > div #followus ul li {
-  margin: 0px 15px;
+  margin: 0px 8px;
 }
 @media (min-width: 992px) {
   #footer > div #news {

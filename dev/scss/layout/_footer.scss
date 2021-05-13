@@ -96,6 +96,7 @@
             }
             form{
                 button{
+                    display: flex;
                     background-color: $green1;
                     color: white;
                     font-size: rem-calc(14px);
@@ -105,7 +106,16 @@
                     padding: 4px 6px;
                     transition: .25s;
                     margin-top: 16px;
-                    align-content: right;
+                    margin-bottom: 32px;
+                    margin-left: 76%;
+
+                    @include md{
+                        margin-left: 78%;
+                    }
+
+                    @include lg{
+                        margin-left: auto;
+                    }
 
                     &:hover{
                         background-color: $forest;
@@ -155,15 +165,16 @@
             }
         }
         #followus{
-            align-items: right;
-            @include md{
-                grid-area: followus;
-            }
+            // @include md{
+            //     grid-area: followus;
+            // }
             ul{
-                display: flex;
                 margin-top: 0 8px;
                 li{
-                    margin: 0px 15px;
+                    margin: 0px 8px;
+                    // a{
+                    //     text-align: left;
+                    // }
                 }
             }
         }
