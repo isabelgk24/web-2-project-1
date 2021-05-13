@@ -8,6 +8,11 @@
     grid-template-areas: ". header .";
     background-color: $green3;
     color: white;
+    padding: 16px 0px;
+
+    @include md{
+        padding: 21px;
+    }
 
     >div{
         //border: 1 px solid red;
