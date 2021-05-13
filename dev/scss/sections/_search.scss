@@ -25,21 +25,18 @@
 
             form{
                 display: grid;
-                    grid-template-columns: 80% auto;
-                    gap: 8px;
+                grid-template-columns: 80% auto;
+                gap: 8px;
 
-                    @include md{
-                        gap: 16px;
-                    }
+                @include md{
+                    gap: 12px;
+                }
+                
                 input{
                     background-color: transparent;
                     border: none;
                     border-bottom: 1px solid $green1;
                     width: 100%;
-
-                    // display: grid;
-                    // grid-template-columns: 80% auto;
-                    // gap: 40px;
 
                     @include md{
                         font-size: rem-calc(30px);

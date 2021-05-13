@@ -996,7 +996,7 @@ textarea {
 }
 @media (min-width: 768px) {
   #search > div form {
-    gap: 16px;
+    gap: 12px;
   }
 }
 #search > div form input {
