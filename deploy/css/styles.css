@@ -581,18 +581,19 @@ textarea {
 @media (min-width: 768px) {
   #content1 {
     display: grid;
-    padding: 16px 0px 32px 0px;
+    padding: 16px 0px;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". content1 .";
   }
 }
 @media (min-width: 992px) {
   #content1 {
-    padding: 32px 0px 48px 0px;
+    padding: 32px 0px;
   }
 }
 @media (min-width: 1200px) {
   #content1 {
+    padding: 40px;
     grid-template-columns: auto 1000px auto;
   }
 }
@@ -616,14 +617,16 @@ textarea {
   color: #003505;
 }
 #content1 ul li > div {
-  grid-area: content1;
   display: flex;
+  grid-area: content1;
   align-content: right;
 }
 #content1 ul li > div section div {
+  align-items: center;
   padding: 30px 0px 20px 0px;
 }
 #content1 ul li > div section div button {
+  margin-top: 12px;
   background-color: #779d86;
   color: white;
   font-size: 0.875rem;
@@ -653,8 +656,10 @@ textarea {
     font-size: 1.9375rem;
   }
 }
+#content1 ul li > div aside {
+  margin-left: auto;
+}
 #content1 ul li > div aside div {
-  align-items: right;
   background-position: center;
   background-size: cover;
   border: 4px white solid;
