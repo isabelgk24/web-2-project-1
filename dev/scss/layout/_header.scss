@@ -5,15 +5,10 @@
 #header{
     background-color: $green3;
     color: white;
-    // padding: 16px 0px;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-
-    // @include md{
-    //     padding: 21px;
-    // }
 
     #h1{
         padding: 16px 16px;
@@ -27,7 +22,7 @@
 
         #burger{
             align-items: center;
-            text-justify: left;
+            justify-content: left;
             display: flex;
             flex: end;
             grid-area: burger;

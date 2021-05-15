@@ -410,6 +410,55 @@ textarea {
 /* =============
     Navigation
 ============= */
+#navcontainer ul {
+  height: 100%;
+}
+@media (min-width: 992px) {
+  #navcontainer ul {
+    display: flex;
+  }
+}
+#navcontainer ul li {
+  margin-bottom: 5px;
+}
+@media (min-width: 992px) {
+  #navcontainer ul li {
+    align-items: center;
+    display: flex;
+    margin-bottom: 0px;
+  }
+}
+#navcontainer ul li a:link,
+#navcontainer ul li a:visited {
+  color: #003505;
+  font-family: "noto sans kr", sans-serif;
+  padding: 0 20px;
+  text-decoration: none;
+  transition: 0.25s;
+}
+@media (min-width: 992px) {
+  #navcontainer ul li a:link,
+#navcontainer ul li a:visited {
+    color: #fff;
+  }
+}
+#navcontainer ul li a:link:hover, #navcontainer ul li a:link:active,
+#navcontainer ul li a:visited:hover,
+#navcontainer ul li a:visited:active {
+  color: #dadfd5;
+}
+#navcontainer ul li:first-child {
+  border: none;
+}
+@media (min-width: 768px) {
+  #navcontainer ul li:first-child {
+    display: list-item;
+  }
+}
+#navcontainer ul li:last-child {
+  border: none;
+}
+
 /* =============
     Header
 ============= */
@@ -430,7 +479,7 @@ textarea {
 }
 #header > div #burger {
   align-items: center;
-  text-justify: left;
+  justify-content: left;
   display: flex;
   flex: end;
   grid-area: burger;
