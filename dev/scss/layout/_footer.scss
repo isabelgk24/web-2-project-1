@@ -54,6 +54,7 @@
             }
             #social{ 
                 display: flex;
+                flex: end;
                 li{
                     i{
                         color: $greengray;
@@ -64,8 +65,7 @@
                 
                 li{
                     display: flex;
-                    margin-bottom: 24px;
-
+                    margin-bottom: 15px;
                     i{
                         color: $green1;
                         font-size: rem-calc(20);

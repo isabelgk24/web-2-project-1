@@ -414,20 +414,36 @@ textarea {
     Header
 ============= */
 #header {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". header .";
   background-color: #37644d;
   color: white;
-  padding: 16px 0px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
-@media (min-width: 768px) {
-  #header {
-    padding: 21px;
-  }
+#header #h1 {
+  padding: 16px 16px;
 }
 #header > div {
-  grid-area: header;
+  display: grid;
+  grid-template-areas: "h1 burger" "nav nav";
+}
+#header > div #burger {
+  align-items: center;
+  text-justify: left;
+  display: flex;
+  flex: end;
+  grid-area: burger;
+  padding: 10px;
+}
+#header > div #burger i {
+  font-size: 1.875rem;
+  cursor: pointer;
+}
+#header > div #navcontainer {
+  background-color: #779d86;
+  grid-area: nav;
+  padding: 20px 10px 10px;
 }
 #header > div section h1 {
   font-family: "merriweather";
@@ -504,13 +520,14 @@ textarea {
 }
 #footer > div section #social {
   display: flex;
+  flex: end;
 }
 #footer > div section #social li i {
   color: #dadfd5;
 }
 #footer > div section ul li {
   display: flex;
-  margin-bottom: 24px;
+  margin-bottom: 15px;
 }
 #footer > div section ul li i {
   color: #779d86;
