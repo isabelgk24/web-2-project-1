@@ -683,6 +683,14 @@ textarea {
 #footer > div #followus ul li {
   margin: 0px 8px;
 }
+#footer > div #news {
+  margin-top: 70px;
+}
+@media (min-width: 768px) {
+  #footer > div #news {
+    margin-top: 0px;
+  }
+}
 @media (min-width: 992px) {
   #footer > div #news {
     text-align: center;
@@ -1046,7 +1054,6 @@ textarea {
   margin-left: auto;
   display: flex;
   align-items: center;
-  border: 5px solid red;
 }
 #hero ul li a:link .part2 h5, #hero ul li a:visited .part2 h5 {
   display: none;
@@ -1112,7 +1119,7 @@ textarea {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". search .";
-  margin-top: 100px;
+  margin-top: 85px;
 }
 @media (min-width: 1200px) {
   #search {
@@ -1127,6 +1134,11 @@ textarea {
 @media (min-width: 992px) {
   #search {
     padding: 24px 0px;
+  }
+}
+@media (min-width: 768px) {
+  #search {
+    margin-top: 100px;
   }
 }
 @media (min-width: 992px) {

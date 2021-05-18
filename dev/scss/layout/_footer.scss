@@ -185,6 +185,10 @@
             }
         }
         #news{
+            margin-top: 70px;
+            @include md{
+                margin-top: 0px;
+            }
             @include lg{
                 text-align: center;
             }
