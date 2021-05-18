@@ -416,10 +416,12 @@ textarea {
 @media (min-width: 992px) {
   #nav-container ul {
     display: flex;
+    justify-content: flex-end;
   }
 }
 #nav-container ul li {
   margin-bottom: 5px;
+  text-align: right;
 }
 @media (min-width: 992px) {
   #nav-container ul li {
@@ -447,14 +449,6 @@ textarea {
 #nav-container ul li a:visited:active {
   color: #dadfd5;
 }
-#nav-container ul li:first-child {
-  border: none;
-}
-@media (min-width: 768px) {
-  #nav-container ul li:first-child {
-    display: list-item;
-  }
-}
 
 /* =============
     Header
@@ -474,26 +468,37 @@ textarea {
   display: grid;
   grid-template-areas: "h1 burger" "nav nav";
 }
-#header > div #burger {
+@media (min-width: 992px) {
+  #header > div {
+    grid-template-areas: "h1 nav";
+  }
+}
+#header > div #burger-container {
   align-items: center;
-  justify-content: left;
   display: flex;
-  flex: end;
   grid-area: burger;
   padding: 10px;
 }
-#header > div #burger i {
-  font-size: 1.875rem;
+#header > div #burger-container i {
+  margin-left: auto;
+  font-size: 2.1875rem;
   cursor: pointer;
 }
-#header > div #navcontainer {
+@media (min-width: 992px) {
+  #header > div #burger-container {
+    display: none !important;
+  }
+}
+#header > div #nav-container {
   background-color: #779d86;
+  display: flex;
   grid-area: nav;
   padding: 20px 10px 10px;
 }
-@media (min-width: 768px) {
-  #header > div #navcontainer {
-    display: none;
+@media (min-width: 992px) {
+  #header > div #nav-container {
+    background-color: #37644d;
+    display: block !important;
   }
 }
 #header > div section h1 {

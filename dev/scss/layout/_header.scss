@@ -20,25 +20,33 @@
         grid-template-areas: "h1 burger"
         "nav nav";
 
-        #burger{
+        @include lg{
+            grid-template-areas: "h1 nav";
+        }
+
+        #burger-container{
             align-items: center;
-            justify-content: left;
             display: flex;
-            flex: end;
             grid-area: burger;
             padding: 10px;
             i{
-                font-size: rem-calc(30);
+                margin-left: auto;
+                font-size: rem-calc(35);
                 cursor: pointer;
             }
+            @include lg{
+                display: none !important;
+            }
         }
-        #navcontainer{
+        #nav-container{
             background-color: $green1;
+            display: flex;
             grid-area: nav;
             padding: 20px 10px 10px;
             
-            @include md{
-                display: none;
+            @include lg{
+                background-color: $green3;
+                display: block !important;
             }
         }
         section{
