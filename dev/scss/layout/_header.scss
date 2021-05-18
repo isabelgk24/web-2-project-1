@@ -36,7 +36,10 @@
             background-color: $green1;
             grid-area: nav;
             padding: 20px 10px 10px;
-
+            
+            @include md{
+                display: none;
+            }
         }
         section{
             h1{

@@ -54,10 +54,9 @@
             }
             #social{ 
                 display: flex;
-                flex: end;
                 li{
                     i{
-                        color: $greengray;
+                        color: $white;
                     }
                 }
             }
@@ -92,6 +91,16 @@
                         font-style: normal;
                     }
                     
+                }
+            }
+            hr{
+                height: 1px;
+                background-color: $greengray;
+                border: none;
+                @include md{
+                width: 95%;
+                text-align: left;
+                margin-left: 0;
                 }
             }
             form{
@@ -165,16 +174,13 @@
             }
         }
         #followus{
-            // @include md{
-            //     grid-area: followus;
-            // }
             ul{
+                @include lg{
+                    justify-content: flex-end;
+                }
                 margin-top: 0 8px;
                 li{
                     margin: 0px 8px;
-                    // a{
-                    //     text-align: left;
-                    // }
                 }
             }
         }
