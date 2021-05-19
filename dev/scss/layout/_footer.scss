@@ -2,7 +2,7 @@
     Footer
 ============= */
 
-#footer{ 
+#footer {
     padding: 16px 0px;
     background-color: $green3;
     color: $greengray;
@@ -10,73 +10,77 @@
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer .";
 
-    @include md{
+    @include md {
         padding: 32px;
     }
-    @include lg{
+
+    @include lg {
         padding: 60px;
     }
 
-@include xl{
-    grid-template-columns: auto 1150px auto;
-    padding: 64px;
+    @include xl {
+        grid-template-columns: auto 1150px auto;
+        padding: 64px;
     }
 
-    >div{
+    >div {
         grid-area: footer;
-        @include md{
+
+        @include md {
             display: grid;
             grid-template-columns: 50% auto;
             grid-template-areas: "locations newsletter"
-            "locations followus";
+                "locations followus";
             gap: 16px;
-            }
-            @include lg{
-                grid-template-columns: repeat (3, 1fr);
-                grid-template-areas: "locations newsletter followus";
-                }
+        }
 
-        section{
-            h3{
+        @include lg {
+            grid-template-columns: repeat (3, 1fr);
+            grid-template-areas: "locations newsletter followus";
+        }
+
+        section {
+            h3 {
                 font-size: rem-calc(20px);
                 font-weight: 700;
                 font-family: 'merriweather';
                 padding: 0px 0px 16px 0px;
             }
-            section{
-                h4{
-                font-size: rem-calc(16px);
-                font-weight: 700;
-                font-family: 'merriweather';
-                margin-top: 16px;
-                margin-bottom: 16px;
+
+            section {
+                h4 {
+                    font-size: rem-calc(16px);
+                    font-weight: 700;
+                    font-family: 'merriweather';
+                    margin-top: 16px;
+                    margin-bottom: 16px;
                 }
             }
-            #social{ 
+
+            #social {
                 display: flex;
-                li{
-                    i{
+
+                li {
+                    i {
                         color: $white;
                     }
                 }
             }
-            ul{ 
-                
-                li{
+
+            ul {
+
+                li {
                     display: flex;
                     margin-bottom: 15px;
-                    i{
+
+                    i {
                         color: $green1;
                         font-size: rem-calc(20);
                         margin-right: 10px;
-
-                        @include lg{
-                        margin-right: 0px;
-                        margin-left: 10px;
-                        }
                     }
-                   
-                    a:link, a:visited{
+
+                    a:link,
+                    a:visited {
                         text-decoration: none;
                         color: $greengray;
                         transition: .25s;
@@ -84,32 +88,37 @@
                         font-weight: 400;
                         font-family: 'noto sans kr';
                         font-style: normal;
-    
-                        &:hover, &:active{
+
+                        &:hover,
+                        &:active {
                             color: $white;
                         }
                     }
-                    address{
+
+                    address {
                         font-size: rem-calc(12px);
                         font-weight: 400;
                         font-family: 'noto sans kr';
                         font-style: normal;
                     }
-                    
+
                 }
             }
-            hr{
+
+            hr {
                 height: 1px;
                 background-color: $greengray;
                 border: none;
-                @include md{
-                width: 95%;
-                text-align: left;
-                margin-left: 0;
+
+                @include md {
+                    width: 95%;
+                    text-align: left;
+                    margin-left: 0;
                 }
             }
-            form{
-                button{
+
+            form {
+                button {
                     display: flex;
                     background-color: $green1;
                     color: white;
@@ -123,24 +132,25 @@
                     margin-bottom: 32px;
                     margin-left: 76%;
 
-                    @include md{
+                    @include md {
                         margin-left: 78%;
                     }
 
-                    @include lg{
+                    @include lg {
                         margin-left: auto;
                     }
 
-                    &:hover{
+                    &:hover {
                         background-color: $forest;
                         cursor: pointer;
                     }
                 }
             }
         }
-        section{
-            form{
-                input{
+
+        section {
+            form {
+                input {
                     border: none;
                     background-color: $greengray;
                     padding: 16px 8px;
@@ -150,16 +160,18 @@
                     color: $green3;
                     width: 90%;
 
-                    &::placeholder{
+                    &::placeholder {
                         // Chrome, Firefox, Opera, Safari 10.1+
                         color: $green3;
                         // Firefox
                         opacity: 1;
                     }
+
                     &:-ms-input-placeholder {
                         // internet explorer 10-11
                         color: $green3;
                     }
+
                     &::-ms-input-placeholder {
                         // microsoft edge
                         color: $green3;
@@ -168,43 +180,52 @@
             }
         }
 
-        #locations{
-            @include md{
+        #locations {
+            @include md {
                 grid-area: locations;
             }
         }
-        #newsletter{
-            @include md{
+
+        #newsletter {
+            @include md {
                 grid-area: newsletter;
             }
         }
-        #followus{
-            ul{
-                @include lg{
+
+        #followus {
+            ul {
+                @include lg {
                     justify-content: flex-end;
                 }
+
                 margin-top: 0 8px;
-                li{
+
+                li {
                     margin: 0px 16px 0px 0px;
-                    @include lg{
-                    margin: 0px 0px 0px 16px;
+
+                    @include lg {
+                        margin: 0px 0px 0px 16px;
                     }
                 }
             }
         }
-        #news{
+
+        #news {
             margin-top: 70px;
-            @include md{
+
+            @include md {
                 margin-top: 0px;
             }
-            @include lg{
+
+            @include lg {
                 text-align: center;
             }
         }
-        #follow{
-            @include lg{
+
+        #follow {
+            @include lg {
                 text-align: right;
             }
         }
     }
-} 
+}

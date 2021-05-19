@@ -2,133 +2,148 @@
     content2
 ============= */
 
-#content2{
+#content2 {
 
     padding: 6px 0px 16px;
-    
-    @include md{
+
+    @include md {
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". content2 .";
         padding: 22px 0px 32px;
     }
-    @include lg{
+
+    @include lg {
         padding: 42px 0px 60px;
     }
-    @include xl{
+
+    @include xl {
         grid-template-columns: auto 1200px auto;
         padding: 40px 0px 64px;
     }
 
->div{
-    
-    @include md{
-        grid-area: content2;
-    }
-    h2{
-        color: $forest;
-        font-size: rem-calc(20px);
-        font-weight: 700;
-        font-family: 'merriweather';
-        padding: 8px;
-        @include md{
-            font-size: rem-calc(28px);
-        }
-        @include lg{
-            font-size: rem-calc(37px);
-        }
-    }
-    ul{
-        display: grid;
-        gap: 16px; 
+    >div {
 
-        @include md{
-            display: grid;
-            grid-template-columns: repeat (4, 1fr);
-            grid-template-areas: "c1 c1 c2 c2"
-            "c3 c3 c4 c4"
-            ". c5 c5 .";
-        }
-        @include lg{
-            grid-template-columns: repeat (6, 1fr);
-            grid-template-areas: "c1 c1 c2 c2 c3 c3"
-            ". c4 c4 c5 c5 .";
+        @include md {
+            grid-area: content2;
         }
 
-        li{
-            background-color: $greengray;
-            img{
-                width: 100%;
+        h2 {
+            color: $forest;
+            font-size: rem-calc(20px);
+            font-weight: 700;
+            font-family: 'merriweather';
+            padding: 8px;
+
+            @include md {
+                font-size: rem-calc(28px);
             }
-            section{
+
+            @include lg {
+                font-size: rem-calc(37px);
+            }
+        }
+
+        ul {
+            display: grid;
+            gap: 16px;
+
+            @include md {
                 display: grid;
-                grid-template-columns: 16px auto 16px;
-                grid-template-areas: ". content2 .";
+                grid-template-columns: repeat (4, 1fr);
+                grid-template-areas: "c1 c1 c2 c2"
+                    "c3 c3 c4 c4"
+                    ". c5 c5 .";
+            }
 
-                div{
-                    grid-area: content2;
-                    padding: 8px 8px 24px;
-                    p{
-                        font-size: rem-calc(16px);
-                        font-weight: 400;
-                        font-family: 'noto sans kr';
-                        padding: 5px 0px 16px;
-                        @include md{
-                            
-                        }
-                    }
-                
-                    h3{
-                        color: $forest;
-                        font-size: rem-calc(27px);
-                        font-weight: 700;
-                        font-family: 'merriweather';
-                        padding: 5px 0px 20px;
-                    }
-                    button{
-                        background-color: $green1;
-                        color: white;
-                        font-size: rem-calc(14px);
-                        font-weight: 700;
-                        font-family: 'noto sans kr';
-                        border: none;
-                        padding: 3px 6px;
-                        transition: .25s;
+            @include lg {
+                grid-template-columns: repeat (6, 1fr);
+                grid-template-areas: "c1 c1 c2 c2 c3 c3"
+                    ". c4 c4 c5 c5 .";
+            }
 
-                        &:hover{
-                        background-color: $green3;
-                        cursor: pointer;
-                        }
-                    }
+            li {
+                background-color: $greengray;
+
+                img {
+                    width: 100%;
                 }
 
+                section {
+                    display: grid;
+                    grid-template-columns: 16px auto 16px;
+                    grid-template-areas: ". content2 .";
+
+                    div {
+                        grid-area: content2;
+                        padding: 8px 8px 24px;
+
+                        p {
+                            font-size: rem-calc(16px);
+                            font-weight: 400;
+                            font-family: 'noto sans kr';
+                            padding: 5px 0px 16px;
+
+                            @include md {}
+                        }
+
+                        h3 {
+                            color: $forest;
+                            font-size: rem-calc(27px);
+                            font-weight: 700;
+                            font-family: 'merriweather';
+                            padding: 5px 0px 20px;
+                        }
+
+                        button {
+                            background-color: $green1;
+                            color: white;
+                            font-size: rem-calc(14px);
+                            font-weight: 700;
+                            font-family: 'noto sans kr';
+                            border: none;
+                            padding: 3px 6px;
+                            transition: .25s;
+
+                            &:hover {
+                                background-color: $green3;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
+                }
             }
-        }
-        #c1{
-            @include md{
-                grid-area: c1;
+
+            #c1 {
+                @include md {
+                    grid-area: c1;
+                }
             }
-        }
-        #c2{
-            @include md{
-                grid-area: c2;
+
+            #c2 {
+                @include md {
+                    grid-area: c2;
+                }
             }
-        }
-        #c3{
-            @include md{
-                grid-area: c3;
+
+            #c3 {
+                @include md {
+                    grid-area: c3;
+                }
             }
-        }
-        #c4{
-            @include md{
-                grid-area: c4;
+
+            #c4 {
+                @include md {
+                    grid-area: c4;
+                }
             }
-        }
-        #c5{
-            @include md{
-                grid-area: c5;
+
+            #c5 {
+                @include md {
+                    grid-area: c5;
+                }
             }
-        }
         }
     }
-} 
+}

@@ -2,64 +2,70 @@
     gallery
 ============= */
 
-#gallery{
+#gallery {
 
-
-    @include xl{
+    @include xl {
         display: grid;
         grid-template-columns: auto 1200px auto;
         grid-template-areas: ". gallery .";
     }
 
-        ul{
-            display: grid;
-            grid-area: gallery;
-            grid-template-rows: (360px 486px);
+    ul {
+        display: grid;
+        grid-area: gallery;
+        grid-template-rows: (360px 486px);
 
 
-            @include md{
-                grid-template-columns: 50% auto;
-                grid-template-rows: (640px);
-            }
-            @include lg{
-                grid-template-columns: 60% auto;
-            }
-            @include xl{
-                grid-template-columns: 65% auto;
-                grid-template-areas: 
+        @include md {
+            grid-template-columns: 50% auto;
+            grid-template-rows: (640px);
+        }
+
+        @include lg {
+            grid-template-columns: 60% auto;
+        }
+
+        @include xl {
+            grid-template-columns: 65% auto;
+            grid-template-areas:
                 "g1 g2"
                 "g1 g3";
-                grid-template-rows: repeat(2, 375px);
-            }
-            
-            li{
-                // img{
-                //     width: 100%;
-                // }
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-            }
+            grid-template-rows: repeat(2, 375px);
+        }
 
-            #g1{
-                background-image: url("../img/gallery/2.jpg");
-                @include xl{
-                    grid-area: g1;
-                }
-            }
-            #g2{
-                background-image: url("../img/gallery/3.jpg");
-                @include xl{
-                    grid-area: g2;
-                }
-            }
-            #g3{
-                background-image: url("../img/gallery/4.jpg");
-                display: none;
-                @include xl{
-                    display: list-item;
-                    grid-area: g3;
-                }
+        li {
+            // img{
+            //     width: 100%;
+            // }
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        #g1 {
+            background-image: url("../img/gallery/2.jpg");
+
+            @include xl {
+                grid-area: g1;
             }
         }
-} 
+
+        #g2 {
+            background-image: url("../img/gallery/3.jpg");
+
+            @include xl {
+                grid-area: g2;
+            }
+        }
+
+        #g3 {
+            background-image: url("../img/gallery/4.jpg");
+            display: none;
+
+            @include xl {
+                display: list-item;
+                grid-area: g3;
+            }
+        }
+    }
+}

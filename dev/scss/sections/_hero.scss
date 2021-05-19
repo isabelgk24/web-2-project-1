@@ -2,122 +2,134 @@
     hero
 ============= */
 
-#hero{
- 
-    >div{
+#hero {
+
+    >div {
         background-image: url(../img/hero/1.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         height: 400px;
-    
-        @include md{
+
+        @include md {
             background-position: center;
             height: 500px;
         }
-    
-        @include lg{
+
+        @include lg {
             height: 700px;
         }
-    
-        // @include xl{
-        //     height: 975px;
-        // }
     }
-        ul{
 
-            @include md{
-                display: grid;
-                grid-template-columns: 40% auto;
-            }
-            @include lg{
-                grid-template-columns: 50% auto;
-            }
-    
-            li{
+    ul {
 
-                padding: 16px 0px;
-                align-items: center;
-                a:link, a:visited{
-                    grid-area: hero;
-                    text-decoration: none;
-                    color: $forest;
-                    transition: .25s;
+        @include md {
+            display: grid;
+            grid-template-columns: 40% auto;
+        }
 
+        @include lg {
+            grid-template-columns: 50% auto;
+        }
+
+        li {
+
+            padding: 16px 0px;
+            align-items: center;
+
+            a:link,
+            a:visited {
+                grid-area: hero;
+                text-decoration: none;
+                color: $forest;
+                transition: .25s;
+
+                display: flex;
+
+                // div{
+
+                // }
+
+                &:hover,
+                &:active {
+                    color: $white;
+                }
+
+                .part2 {
+                    margin-left: auto;
                     display: flex;
+                    align-items: center;
 
-                    // div{
+                    h5 {
+                        display: none;
+                        padding-right: 16px;
 
-                    // }
-
-                    &:hover, &:active{
-                        color: $white;
-                    }
-
-                        .part2{
-                            margin-left: auto;
-                            display: flex;
-                            align-items: center;
-                            h5{
-                                display: none;
-                                padding-right: 16px;
-                                @include lg{
-                                    display: block;
-                                }
+                        @include lg {
+                            display: block;
                         }
                     }
                 }
+            }
+
+            display: grid;
+            grid-template-columns: 16px auto 16px;
+            grid-template-areas: ". hero .";
+
+            @include xl {
                 display: grid;
-                grid-template-columns: 16px auto 16px;
-                grid-template-areas: ". hero .";
-    
-                @include xl{
-                    display: grid;
-                    grid-template-columns: auto 480px 16px;
-                }
-    
-                a{
-                    grid-area: hero;
-                    //border: 1px solid red;
-                div{
-                    h3{
+                grid-template-columns: auto 480px 16px;
+            }
+
+            a {
+                grid-area: hero;
+
+                //border: 1px solid red;
+                div {
+                    h3 {
                         font-size: rem-calc(25px);
                         font-weight: 900;
                         font-family: 'merriweather';
                     }
-                    h4{
+
+                    h4 {
                         font-size: rem-calc(16px);
                         font-weight: 900;
                         font-family: 'noto sans kr';
                     }
-                    h3{
+
+                    h3 {
                         font-size: rem-calc(25px);
                         font-weight: 900;
                         font-family: 'merriweather';
                     }
-                    h5{
+
+                    h5 {
                         font-size: rem-calc(18px);
                         font-weight: 900;
                         font-family: 'noto sans kr';
                     }
-                    h6{
+
+                    h6 {
                         font-size: rem-calc(16px);
                         font-weight: 500;
                         font-family: 'noto sans kr';
                     }
                 }
             }
-            }
-            #heroa{
-                background-color: $green2;
-            }
-            #herob{
-                background-color: $green1;
-                @include xl{
-                    display: grid;
-                    grid-template-columns: 16px 480px auto;
-                }
+        }
+
+        #heroa {
+            background-color: $green2;
+        }
+
+        #herob {
+            background-color: $green1;
+
+            @include xl {
+                display: grid;
+                grid-template-columns: 16px 480px auto;
             }
         }
-    
-} 
+    }
+
+}

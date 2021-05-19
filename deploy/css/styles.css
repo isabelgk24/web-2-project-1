@@ -590,13 +590,8 @@ textarea {
   font-size: 1.25rem;
   margin-right: 10px;
 }
-@media (min-width: 992px) {
-  #footer > div section ul li i {
-    margin-right: 0px;
-    margin-left: 10px;
-  }
-}
-#footer > div section ul li a:link, #footer > div section ul li a:visited {
+#footer > div section ul li a:link,
+#footer > div section ul li a:visited {
   text-decoration: none;
   color: #dadfd5;
   transition: 0.25s;
@@ -605,7 +600,9 @@ textarea {
   font-family: "noto sans kr";
   font-style: normal;
 }
-#footer > div section ul li a:link:hover, #footer > div section ul li a:link:active, #footer > div section ul li a:visited:hover, #footer > div section ul li a:visited:active {
+#footer > div section ul li a:link:hover, #footer > div section ul li a:link:active,
+#footer > div section ul li a:visited:hover,
+#footer > div section ul li a:visited:active {
   color: #fff;
 }
 #footer > div section ul li address {
@@ -1057,27 +1054,33 @@ textarea {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero .";
 }
-#hero ul li a:link, #hero ul li a:visited {
+#hero ul li a:link,
+#hero ul li a:visited {
   grid-area: hero;
   text-decoration: none;
   color: #003505;
   transition: 0.25s;
   display: flex;
 }
-#hero ul li a:link:hover, #hero ul li a:link:active, #hero ul li a:visited:hover, #hero ul li a:visited:active {
+#hero ul li a:link:hover, #hero ul li a:link:active,
+#hero ul li a:visited:hover,
+#hero ul li a:visited:active {
   color: #fff;
 }
-#hero ul li a:link .part2, #hero ul li a:visited .part2 {
+#hero ul li a:link .part2,
+#hero ul li a:visited .part2 {
   margin-left: auto;
   display: flex;
   align-items: center;
 }
-#hero ul li a:link .part2 h5, #hero ul li a:visited .part2 h5 {
+#hero ul li a:link .part2 h5,
+#hero ul li a:visited .part2 h5 {
   display: none;
   padding-right: 16px;
 }
 @media (min-width: 992px) {
-  #hero ul li a:link .part2 h5, #hero ul li a:visited .part2 h5 {
+  #hero ul li a:link .part2 h5,
+#hero ul li a:visited .part2 h5 {
     display: block;
   }
 }
