@@ -6,6 +6,8 @@
 
     ul {
         height: 100%;
+        border: 1px solid red;
+        display: inline-block;
 
     @include lg{
         display: flex;
@@ -26,6 +28,7 @@
     a:visited {
         color: $forest;
         font-family: "noto sans kr", sans-serif;
+        font-weight: 400;
         padding: 0 20px;
         text-decoration: none;
         transition: 0.25s;

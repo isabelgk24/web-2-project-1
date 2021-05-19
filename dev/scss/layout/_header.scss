@@ -16,7 +16,7 @@
 
     >div{
         display: grid;
-        // grid-template-columns: 94.5% auto;
+        grid-template-columns: 80% auto;
         grid-template-areas: "h1 burger"
         "nav nav";
 
@@ -40,7 +40,7 @@
         }
         #nav-container{
             background-color: $green1;
-            display: flex;
+            display: none;
             grid-area: nav;
             padding: 20px 10px 10px;
             

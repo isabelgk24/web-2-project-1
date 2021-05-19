@@ -412,6 +412,8 @@ textarea {
 ============= */
 #nav-container ul {
   height: 100%;
+  border: 1px solid red;
+  display: inline-block;
 }
 @media (min-width: 992px) {
   #nav-container ul {
@@ -434,6 +436,7 @@ textarea {
 #nav-container ul li a:visited {
   color: #003505;
   font-family: "noto sans kr", sans-serif;
+  font-weight: 400;
   padding: 0 20px;
   text-decoration: none;
   transition: 0.25s;
@@ -466,6 +469,7 @@ textarea {
 }
 #header > div {
   display: grid;
+  grid-template-columns: 80% auto;
   grid-template-areas: "h1 burger" "nav nav";
 }
 @media (min-width: 992px) {
@@ -491,7 +495,7 @@ textarea {
 }
 #header > div #nav-container {
   background-color: #779d86;
-  display: flex;
+  display: none;
   grid-area: nav;
   padding: 20px 10px 10px;
 }
