@@ -2,37 +2,37 @@
     content1
 ============= */
 
-#content1{
+#content1 {
 
     padding: 16px 0px;
 
-    @include md{
+    @include md {
         display: grid;
         padding: 16px 0px;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". content1 .";
     }
 
-    @include lg{
+    @include lg {
         padding: 32px 0px;
-    } 
+    }
 
-    @include xl{
+    @include xl {
         padding: 40px;
         grid-template-columns: auto 1000px auto;
     }
-    
-    ul{
+
+    ul {
         display: grid;
         gap: 16px;
 
-        @include md{
+        @include md {
             grid-template-columns: 50% auto;
             gap: 24px;
             grid-area: content1;
         }
 
-        li{
+        li {
             padding: 16px 0px;
             display: grid;
             grid-template-columns: 16px auto 16px;
@@ -40,16 +40,18 @@
             background-color: $greengray;
             color: $forest;
 
-            >div{
+            >div {
                 display: flex;
                 grid-area: content1;
                 align-content: right;
+
                 //border: 1px solid red;
-                section{
-                    div{
+                section {
+                    div {
                         align-items: center;
                         padding: 30px 0px 20px 0px;
-                        button{
+
+                        button {
                             margin-top: 12px;
                             background-color: $green1;
                             color: white;
@@ -60,29 +62,34 @@
                             padding: 3px 6px;
                             transition: .25s;
 
-                        &:hover{
-                        background-color: $green3;
-                        cursor: pointer;
+                            &:hover {
+                                background-color: $green3;
+                                cursor: pointer;
+                            }
                         }
-                        }
-                        h1{
+
+                        h1 {
                             padding: 8px 0px 0px 0px;
                             font-size: rem-calc(22px);
                             font-weight: 400;
                             font-family: 'merriweather';
-                            @include md{
+
+                            @include md {
                                 font-size: rem-calc(29px);
                             }
-                            @include lg{
+
+                            @include lg {
                                 font-size: rem-calc(31px);
                             }
                         }
-                        
+
                     }
                 }
-                aside{
+
+                aside {
                     margin-left: auto;
-                    div{
+
+                    div {
                         background-position: center;
                         background-size: cover;
                         border: 4px white solid;
@@ -90,10 +97,12 @@
                         width: 100px;
                         border-radius: 100%;
                     }
-                    #heroa{
+
+                    #heroa {
                         background-image: url("../img/content1/6.jpg");
                     }
-                    #herob{
+
+                    #herob {
                         background-image: url("../img/content1/5.jpg");
                     }
                 }
