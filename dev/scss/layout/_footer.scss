@@ -69,6 +69,11 @@
                         color: $green1;
                         font-size: rem-calc(20);
                         margin-right: 10px;
+
+                        @include lg{
+                        margin-right: 0px;
+                        margin-left: 10px;
+                        }
                     }
                    
                     a:link, a:visited{
@@ -180,7 +185,10 @@
                 }
                 margin-top: 0 8px;
                 li{
-                    margin: 0px 8px;
+                    margin: 0px 16px 0px 0px;
+                    @include lg{
+                    margin: 0px 0px 0px 16px;
+                    }
                 }
             }
         }
